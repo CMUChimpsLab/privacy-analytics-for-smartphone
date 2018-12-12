@@ -1,0 +1,49 @@
+<div class="chart-container" style="width: 100%; height: 100%; margin: 0 auto">
+  <div class="app-list-details" style="width: 100%; ">
+    <label class="title">
+      <ng-content></ng-content>
+    </label>
+    <table>
+      <thead>
+        <tr>
+          <td></td>
+          <td class="appName">App</td>
+          <td>Installs</td>
+          <td class="sorter" (click)="sort('avgRating')"><span class="icon-wrapper" [hidden]="sortField !== 'avgRating'">
+              <span class="icon-wrapper-content" [hidden]="sortDirection !== 'ASC'"><i class="material-icons">arrow_upward</i></span>
+              <span class="icon-wrapper-content" [hidden]="sortDirection !== 'DESC'"><i class="material-icons">arrow_downward</i></span>
+          </span>Avg. Rating</td>
+          <td class="sorter" (click)="sort('reviews')"><span class="icon-wrapper" [hidden]="sortField !== 'reviews'">
+              <span class="icon-wrapper-content" [hidden]="sortDirection !== 'ASC'"><i class="material-icons">arrow_upward</i></span>
+              <span class="icon-wrapper-content" [hidden]="sortDirection !== 'DESC'"><i class="material-icons">arrow_downward</i></span>
+          </span> No. of Reviews</td>
+          <!-- <td>Data types being sent</td> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of apps; let i = index" [hidden]="i >= limit">
+          <td>
+            <div class="app-icon">
+              <img [attr.src]="row.iconUrl" *ngIf="row.iconUrl" />
+              <div class="icon-icon" *ngIf="!row.iconUrl"></div>
+            </div>
+          </td>
+          <td class="appName">{{row.name}}</td>
+          <td>{{row.meta?.installs}}</td>
+          <td>{{row.avgRating}}</td>
+          <td>{{row.meta?.reviews}}</td>
+          <!-- <td>
+            <ng-container *ngFor="let taxonomy of row.mappedTaxonomies">
+              <div class="taxonomy">
+                <i class="md-outline-icon" [ngClass]="taxonomy.outlineIcon"></i> <span>{{taxonomy.label}}</span>
+              </div>
+            </ng-container>
+          </td> -->
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="footer-wrapper">
+    <button class="traffic-btn" [disabled]="limit > apps.length" (click)="showMore()">Show More</button>
+  </div>
+</div>

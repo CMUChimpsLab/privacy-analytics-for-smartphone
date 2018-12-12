@@ -1,0 +1,104 @@
+.chart-container {
+  position: relative;
+
+  .highchart {
+    position: relative;
+    z-index: 1;
+    // height: calc(100% - 90px);
+    width: 90%;
+    display: block;
+    margin: 0 auto 0 auto;
+    box-sizing: border-box;
+    // padding: 0 0 30px 0;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    font-size: large;
+    z-index: 2;
+    padding: 20px;
+    height: 60px;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
+
+    i {
+      line-height: 60px;
+      height: 60px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .name {
+      line-height: 60px;
+      height: 60px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+  }
+
+  .box {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .key {
+      display: block;
+      font-size: medium;
+      font-weight: 400;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 1px;
+
+      &.normal {
+        font-weight: 300;
+        letter-spacing: normal;
+        margin: 5px 0;
+      }
+    }
+
+    .value {
+      display: block;
+      font-size: 48px;
+      font-weight: 300;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      line-height: 60px;
+      height: 60px;
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.box-item {
+  width: 100%;
+  display: block;
+
+  label.key.normal {
+      width: 100% !important;
+      display: inline-block !important;
+      vertical-align: middle;
+  }
+
+  .app-icon {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}

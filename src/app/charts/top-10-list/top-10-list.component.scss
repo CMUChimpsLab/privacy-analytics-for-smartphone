@@ -1,0 +1,74 @@
+@import '../../../styles.scss';
+.chart-container {
+    position: relative;
+    .highchart {
+        position: relative;
+        z-index: 1;
+        // height: calc(100% - 90px);
+        width: 90%; display: block; 
+        margin: 0px auto 0 auto;
+        box-sizing: border-box;
+        padding: 0px 0 0px 0;
+    }
+    .title {
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+        font-size: large;
+        z-index: 2;
+        padding: 20px;
+        height: 80px;
+        font-weight: 300;
+        box-sizing: border-box;
+        margin: 0;
+        i {
+            line-height: 80px;
+            height: 80px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .name {
+            line-height: 80px;
+            height: 80px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+    }
+
+    .box {
+        width: 100%;
+        float: left;
+        display: block;
+        margin-top: 5px;
+        padding: 0 5px;
+        .key {
+            float: left;
+            font-size: medium;
+            font-weight: 400;
+            margin: 0;
+            width: calc(100% - 150px);
+            text-align: left;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+            line-height: 36px;
+            height: 36px;
+            font-weight: 300;
+            letter-spacing: normal;
+            text-overflow: ellipsis;
+            overflow-x: hidden;
+            white-space: nowrap;
+        }
+        .value {
+            font-weight: 300;
+            float: right;
+            font-size: medium;
+            margin: 0;
+            width: 150px;
+            text-align: right;
+            line-height: 36px;
+            height: 36px;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+        }
+    }
+} 

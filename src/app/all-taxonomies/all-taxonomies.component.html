@@ -1,0 +1,72 @@
+<div class="wrapper-content">
+  <div class="header-wrapper" *ngIf="showHeader">
+    <div class="header search-header">
+      <label class="title" *ngIf="currentCriteria === 'apps'"><strong>What</strong> data types are being sent by the apps ?
+      </label>
+      <label class="title" *ngIf="currentCriteria === 'hosts'"><strong>What</strong> data types are being sent to the hosts ?
+      </label>
+      <label class="title" *ngIf="currentCriteria === 'requests'"><strong>What</strong> data types are being sent in the
+        requests ? </label>
+      <div style="margin-left: auto;" >
+        <button class="btn-pg" (click)="showChildren()"> <i class="material-icons"> remove_red_eye </i><span [hidden]="showInnerTaxonomies">Show</span><span
+            [hidden]="!showInnerTaxonomies">Hide</span> Inner
+          Taxonomies</button>
+        <button class="btn-pg" (click)="taxonomyFilterShown = !taxonomyFilterShown" [hidden]="true" [class.active]="taxonomyFilterShown"><i
+            class="material-icons"> filter_list</i>Filters</button>
+      </div>
+      <div class="toggler">
+        <button [class.active]="currentCriteria === 'apps'" (click)="setCurrentCriteria('apps')">Who</button>
+        <button [class.active]="currentCriteria === 'hosts'" (click)="setCurrentCriteria('hosts')">Where</button>
+        <button [class.active]="currentCriteria === 'requests'" (click)="setCurrentCriteria('requests')">Requests</button>
+      </div>
+      <div class="taxonomies-header" [hidden]="!taxonomyFilterShown || true">
+        <label> Available Taxonomies</label>
+        <div class="taxonomy" *ngFor="let item of taxonomyList" [style.borderColor]="item.color">
+          <div class="wrapper">
+            <span class="color" [style.background]="item.color"></span>
+            <span class="name">{{item.name}}</span>
+            <i class="material-icons close">close</i>
+          </div>
+        </div>
+        <i class="material-icons close-pane" (click)="taxonomyFilterShown = false" role="button">close</i>
+      </div>
+    </div>
+  </div>
+  <ng-content></ng-content>
+  <div class="charts-container" [class.noHeader]="!showHeader">
+    <div class="charting-container">
+      <highcharts-chart *ngIf="!showInnerTaxonomies && showChart" [Highcharts]="Highcharts" [options]="upperTaxonomyChartOptions"
+        style="width: 90%; height: 500px; display: block; margin: 0;"></highcharts-chart>
+      <highcharts-chart *ngIf="showInnerTaxonomies && showChart" [Highcharts]="Highcharts" [options]="allTaxonomyChartOptions"
+        style="width: 90%; height: 500px; display: block; margin: 0;"></highcharts-chart>
+    </div>
+    <div class="table-container">
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="second"></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let row of tableData">
+            <tr *ngIf="row.showParent" class="parent">
+              <td colspan="3">{{row.parent}}</td>
+            </tr>
+            <tr [class.showBorderBottom]="row.borderBottom" [class.start]="row.start" [class.bitOpaque]="row.value === 0"
+              [class.end]="row.end">
+              <td>
+                  <i class="md-outline-icon" [ngClass]="row.outlineIcon"></i>
+                {{row.name}}</td>
+              <td class="second">{{row.value}} <span>{{currentCriteria}}</span></td>
+              <td>
+                <div class="color-block" [style.background]="row.color"></div>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

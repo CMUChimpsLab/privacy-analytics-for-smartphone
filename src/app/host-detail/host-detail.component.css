@@ -1,0 +1,86 @@
+/* HeroDetailComponent's private CSS styles */
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+button {
+  margin-top: 20px;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; cursor: hand;
+}
+button:hover {
+  background-color: #cfd8dc;
+}
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+.title {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #d0d0d0;
+  padding: 10px 0 20px 0;
+}
+.boxes {
+  margin: 30px 0 0 0;
+}
+.boxes .box {
+  padding: 10px 0;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  min-width: calc(0.20 * (100% - 50px));
+  float: left;
+}
+.boxes .box label.key {
+  margin: 0;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: small;
+}
+.boxes .box label.value {
+  margin: 0;
+  display: block;
+  width: 100%;
+  font-weight: 100;
+  font-size: xx-large;
+}
+.list {
+  width: 100%;
+  display: block;
+  margin: 30px 0 0 0;
+}
+.list h4 {
+  display: block;
+  width: 100;
+  color: #303030;
+  font-weight: 100;
+}
+.list a {
+  padding: 0 10px;
+  display: inline-block;
+  text-decoration: none;
+  height: 36px;
+  line-height: 36px;
+  background: #f0f0f0;
+  margin: 0 5px 5px 0;
+  font-size: small;
+  transition: background 0.15s linear 0s;
+}
+.list a:hover,
+.list a:hover,
+.list a:focus {
+  background: #e0e0e0;
+}

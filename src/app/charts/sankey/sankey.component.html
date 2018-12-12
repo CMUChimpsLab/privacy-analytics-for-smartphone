@@ -1,0 +1,6 @@
+<div class="chart-container" style="width: 100%; margin: 0 auto; display: block;;">
+  <!-- <label class="title">
+    <ng-content></ng-content>
+  </label> -->
+  <highcharts-chart [style.height]="height + 'px'" style="width: 100%; display: block;" class="highchart" *ngIf="data" [Highcharts]="Highcharts" [options]="data"></highcharts-chart>
+</div>

@@ -1,0 +1,115 @@
+<div class="app-wrapper">
+  <div class="header" *ngIf="showHeader">
+    <div class="navigation-wrapper" data-tag="navigation">
+      <div class="header-item main" (click)="goHome()">
+        <label>Privacy Analytics for Smartphones</label>
+      </div>
+      <div class="separator"></div>
+      <!-- <div class="header-item" [class.active]="currentPage === 'apps'" (click)="setPage('apps')">
+        <i class="material-icons">list</i>
+        <label>All Apps</label>
+      </div> -->
+      <div class="header-item" [class.active]="currentPage === 'types'" (click)="setPage('index', 'types')">
+        <i class="material-icons">timeline</i>
+        <label>All Categories</label>
+      </div>
+      <div class="separator" style="margin-left: 0;"></div>
+      <div class="header-item" [class.active]="currentPage === 'id'" (click)="setPage('index', 'id')">
+        <i class="material-icons">android</i>
+        <label>ID</label>
+      </div>
+      <div class="header-item" [class.active]="currentPage === 'phone'" (click)="setPage('index', 'phone')">
+        <i class="material-icons">phone</i>
+        <label>Phone</label>
+      </div>
+      <div class="header-item" [class.active]="currentPage === 'personal'" (click)="setPage('index', 'personal')">
+        <i class="material-icons">person</i>
+        <label>Personal</label>
+      </div>
+      <div class="header-item" [class.active]="currentPage === 'sensor'" (click)="setPage('index', 'sensor')">
+        <i class="material-icons">ac_unit</i>
+        <label>Sensor</label>
+      </div>
+      <div class="separator"></div>
+      <div class="header-item" [class.active]="currentPage === 'search'" (click)="setPage('search')" style="margin-left: auto;">
+        <i class="material-icons">search</i>
+        <label>Search</label>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-for-content" #wrapper [class.noOverflow]="showAppTaxonomyDetails" data-tag="view-scroller">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="taxonomy-details-pane-wrapper" *ngIf="showAppTaxonomyDetails">
+    <div class="taxonomy-details-pane">
+      <div class="background-overlay" (click)="showAppTaxonomyDetails = false;" [class.show]="showAppTaxonomyDetails"></div>
+      <div class="table-settings-wrapper" [class.show]="showAppTaxonomyDetails">
+        <div class="close" (click)="showAppTaxonomyDetails = false;">
+          <i class="material-icons">close</i>
+        </div>
+        <div class="table-settings-wrapper-header" [hidden]="true">
+          <label>{{appDetails?.name}}</label>
+        </div>
+        <div class="table-settings-wrapper-content">
+          <div class="img-desc">
+            <div class="img">
+              <img [attr.src]="appDetails?.iconUrl" />
+            </div>
+            <div class="desc">
+              <label>{{appDetails?.name}}</label>
+              <p *ngIf="!appDetails?.metaMissing">{{appDetails?.meta?.genre}}</p>
+            </div>
+            <div class="description" *ngIf="appDetails">
+              <div class="block-text" *ngIf="appDetails?.privacyRating">
+                <label class="key">PrivacyGrade</label>
+                <label class="value">{{appDetails?.privacyRating}}</label>
+              </div>
+              <div class="block-text" *ngIf="appDetails?.meta?.installs">
+                <label class="key">Installs</label>
+                <label class="value">{{appDetails?.meta?.installs}}</label>
+              </div>
+              <div class="block-text" *ngIf="appDetails?.meta?.priceText">
+                <label class="key">Price</label>
+                <label class="value">{{appDetails?.meta?.priceText}}</label>
+              </div>
+              <div class="block-text" *ngIf="appDetails?.meta?.reviews">
+                <label class="key">Reviews #</label>
+                <label class="value">{{appDetails?.meta?.reviews}}</label>
+              </div>
+              <div class="block-text" *ngIf="appDetails?.meta?.avgRating">
+                  <label class="key">Avg Rating #</label>
+                  <label class="value">{{appDetails?.avgRating}}</label>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="separator" *ngIf="!appDetails?.metaMissing"></div>
+          <label class="title-block">Description</label>
+          <p class="description-full" *ngIf="appDetails?.metaMissing">{{appDetails?.desc}}</p>
+          <p class="description-full" *ngIf="!appDetails?.metaMissing">{{appDetails?.meta?.summary}}</p>
+          <div class="separator"></div>
+          <label class="title-block" style="padding-bottom: 10px;">What data types are sent by the app ?</label>
+          <div class="taxonomies-block">
+            <div class="taxonomy" *ngFor="let item of appTaxonomyDetails">
+              <i class="md-outline-icon" [ngClass]="item.outlineIcon"></i>
+              <span class="box-text">{{item.label}}</span>
+            </div>
+          </div>
+          <label class="title-block" style="padding-bottom: 10px;">Where does the different data end up at ?</label>
+          <app-sankey [count]="sankeyDataRef" style="display: block; width: 100%;" [data]="sankeyData"></app-sankey>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="taxonomy-details-pane-wrapper noPadding" *ngIf="showTaxonomyDetails">
+    <div class="taxonomy-details-pane align-right">
+      <div class="background-overlay" (click)="showTaxonomyDetails = false;" [class.show]="showTaxonomyDetails"></div>
+      <div class="table-settings-wrapper w400" [class.show]="showTaxonomyDetails">
+        <div class="close" (click)="showTaxonomyDetails = false;">
+          <i class="material-icons">close</i>
+        </div>
+        <app-taxonomy-detail [parent]="parentTaxonomy" [child]="childTaxonomy" [embedded]="true"></app-taxonomy-detail>
+      </div>
+    </div>
+  </div>
+</div>

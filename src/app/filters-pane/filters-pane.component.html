@@ -1,0 +1,60 @@
+<div class="filter-pane-wrapper">
+    <label class="title">Filters</label>
+    <div class="panes-wrapper">
+        <div class="pane">
+            <div class="pane-item" *ngIf="privacyRatingMeta">
+                <label>{{privacyRatingMeta.name}}</label>
+                <div class="cb-holder" *ngFor="let item of privacyRatingMeta?.values; let i = index;">
+                    <label [attr.for]="'prm-' + i"><input [(ngModel)]="item.checked" type="checkbox" [attr.id]="'prm-' + i" />
+                        <span>{{item.value}}</span></label>
+                </div>
+            </div>
+            <div class="pane-item" *ngIf="freeAppsMeta">
+                <label>{{freeAppsMeta.name}}</label>
+                <div class="cb-holder" *ngFor="let item of freeAppsMeta?.values; let i = index;">
+                    <label [attr.for]="'fam-' + i"><input [(ngModel)]="item.checked" type="checkbox" [attr.id]="'fam-' + i" />
+                        <span>{{item.value}}</span></label>
+                </div>
+            </div>
+            <div class="pane-item" *ngIf="adSupportedMeta">
+                <label>{{adSupportedMeta.name}}</label>
+                <div class="cb-holder" *ngFor="let item of adSupportedMeta?.values; let i = index;">
+                    <label [attr.for]="'ads-' + i"><input [(ngModel)]="item.checked" type="checkbox" [attr.id]="'ads-' + i" />
+                        <span>{{item.value}}</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="pane">
+                <div class="pane-item standalone" *ngIf="installsMeta">
+                    <label>{{installsMeta.name}}</label>
+                    <div class="cb-holder" *ngFor="let item of installsMeta?.values; let i = index;">
+                        <label [attr.for]="'im-' + i"><input [(ngModel)]="item.checked" type="checkbox" [attr.id]="'im-' + i" />
+                            <span>{{item.value}}</span></label>
+                    </div>
+                </div>
+            </div>
+        <div class="pane">
+            <div class="pane-item standalone" *ngIf="appCategoriesMeta">
+                <label>{{appCategoriesMeta.name}}</label>
+                <div class="cb-holder" *ngFor="let item of appCategoriesMeta?.values; let i = index;">
+                    <label [attr.for]="'acm-' + i"><input [(ngModel)]="item.checked" type="checkbox" [attr.id]="'acm-' + i" />
+                        <span>{{item.value}}</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="pane">
+            <div class="pane-item standalone" *ngIf="taxonomiesMeta">
+                <label>{{taxonomiesMeta.name}}</label>
+                <div class="cb-holder" *ngFor="let item of taxonomiesMeta?.values; let i = index;">
+                    <label [attr.for]="'tm-' + i"><input [(ngModel)]="item.checked" type="checkbox" [attr.id]="'tm-' + i" />
+                        <span>{{item.value}}</span></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pane-actions">
+        <button class="pane-action active" (click)="apply()">Apply</button>
+        <button class="pane-action" (click)="close()">Cancel</button>
+        <button class="pane-action" style="margin-left: auto;" (click)="clear()">Clear</button>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+:host {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.filter-pane-wrapper {
+    width: 100%;
+    padding: 0px 10px 0 0;
+    height: 100%;
+    .title {
+        display: block;
+        font-size: x-large;
+        font-weight: bold;
+        color: #565656;
+        padding: 0 15px;
+        line-height: 48px;
+        margin: 0;
+    }
+    .panes-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: calc(100% - 84px);
+        padding: 0px 0 15px 0;
+        .pane {
+            flex: 1;
+            padding: 0 0 0 15px;
+            border-right: 1px solid rgba(0,0,0,0.1);
+            height: 100%;
+            label {
+                font-weight: bold;
+                color: #767676;
+                font-size: small;
+                margin: 0;
+            }
+            .cb-holder {
+                label {
+                    margin: 0;
+                    span {
+                        margin-left: 5px;
+                        font-size: small;
+                        color: #565656;
+                        text-transform: mnone;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .pane-item {
+                max-height: 100%;
+                margin-bottom: 10px;
+                &.standalone {
+                    max-height: 100%;
+                    overflow-y: auto;
+                    -ms-overflow-style: -ms-autohiding-scrollbar;
+                    -webkit-overflow-scrolling: touch;
+                }
+            }
+        }
+    }
+    .pane-actions {
+        width: 100%;
+        height: 36px;
+        display: flex;
+        flex-flow: row;
+        padding: 0 10px;
+        align-items: center;
+        button {
+            background: transparent;
+            border: 2px solid #565656;
+            line-height: 24px;
+            height: 28px;
+            text-align: center;
+            padding: 0 10px;
+            min-width: 80px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: x-small;
+            letter-spacing: 1px;
+            &:nth-child(1) {
+                margin-right: 10px;
+            }
+            &.active {
+                background: #333;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+<div class="wrapper-content" style="height: 100%;">
+  <div class="header-wrapper">
+      <div class="header flex-start">
+          <label class="search-title"><strong *ngIf="currentCriteria === 'apps'">Who</strong><strong *ngIf="currentCriteria === 'hosts'">Where</strong> are we sending {{child}} data ?</label>
+          <div class="toggler" [hidden]="embedded">
+              <button [class.active]="currentCriteria === 'apps'" (click)="toggle('apps')">Who</button>
+              <button [class.active]="currentCriteria === 'hosts'" (click)="toggle('hosts')">Where</button>
+          </div>
+        </div>
+  </div>
+  <div class="inisights-wrapper" style="max-height: calc(100% - 120px); padding: 0;overflow: scroll">
+      <div class="insights-container">
+          <div class="numbers-container" [hidden]="true">
+              <div class="numbers-wrapper" style="height: 100%;">
+                  <label class="chart-title" *ngIf="currentCriteria === 'apps'">Distribution of requests between top 20 apps sending {{child}} data</label>
+                  <label class="chart-title" *ngIf="currentCriteria === 'hosts'">Distribution of requests between top 20 hosts receiving {{child}} data</label>
+                  <highcharts-chart *ngIf="showPieChart && currentCriteria === 'apps'" [Highcharts]="Highcharts" [options]="appsPieChartOptions" style="width: 100%; height: calc(100% - 96px); display: block; margin: 0 auto;"></highcharts-chart>
+                  <highcharts-chart *ngIf="showPieChart && currentCriteria === 'hosts'" [Highcharts]="Highcharts" [options]="appsPieChartOptions" style="width: 100%; height: calc(100% - 96px); display: block; margin: 0 auto;"></highcharts-chart>
+              </div>
+          </div>
+          <div class="unique-apps-container" *ngIf="currentCriteria === 'apps'" style="width: 100%;background: none; box-shadow: none;">
+            <div class="list-wrapper" style="padding-bottom:0;">
+              <!-- <label>List of all apps ({{apps.length}})</label> -->
+              <ul class="list" style="padding-bottom:0; height: 100%;">
+                <li class="item" *ngFor="let app of apps"><span class="text">{{app}}</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="unique-hosts-container" *ngIf="currentCriteria === 'hosts'" style="width: 100%;">
+            <div class="list-wrapper">
+              <label>List of all hosts ({{hosts.length}})</label>
+              <ul class="list">
+                <li class="item" *ngFor="let host of hosts"><span class="text">{{host}}</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>

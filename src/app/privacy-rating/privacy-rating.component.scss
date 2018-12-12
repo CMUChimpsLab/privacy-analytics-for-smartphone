@@ -1,0 +1,17 @@
+.rating {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #A0A0A0;
+    overflow: hidden;
+    text-align: center;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #A0A0A0;
+    font-size: small;
+    opacity: 0.80;
+}
+:host {
+    display: inline-block;
+    vertical-align: middle;
+}

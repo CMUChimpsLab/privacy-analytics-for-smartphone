@@ -1,0 +1,12 @@
+<h2 class="title">{{host?.name}}</h2>
+<div class="boxes">
+    <div class="box" *ngFor="let box of boxes">
+        <label class="key">{{box.key}}</label>
+        <label class="value">{{box.value}}</label>
+    </div>
+    <div class="clearfix"></div>
+</div>
+<div class="list">
+    <h4>Apps</h4>
+    <a *ngFor="let app of host?.apps?.items" [routerLink]="'/host/' + app" >{{app}}</a>
+</div>

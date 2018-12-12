@@ -1,0 +1,82 @@
+<div class="index-wrapper">
+    <div class="index-content">
+        <ng-container *ngIf="showHome">
+            <h2 style="margin-top:35px; padding: 0 30px;">Here is the <strong>breakdown</strong> for the common data
+                types we derived.</h2>
+            <div class="index-box-box w100 noPadding" style="margin-top: 15px; padding: 0 30px; height: calc(100vh - 145px);">
+                <div class="content-wrapper">
+                    <app-all-taxonomies [showHeader]="false" [showInnerTaxonomies]="true" [currentCriteria]="currentCriteria">
+                        <div class="header-wrapper">
+                            <div class="header search-header">
+                                <div class="toggler">
+                                    <button [class.active]="currentCriteria === 'apps'" (click)="setCurrentCriteria('apps')">No.
+                                        of unique apps </button>
+                                    <button [class.active]="currentCriteria === 'hosts'" (click)="setCurrentCriteria('hosts')">No.
+                                        of unique destinations </button>
+                                </div>
+                            </div>
+                        </div>
+                    </app-all-taxonomies>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+    <div class="index-content" *ngIf="showSpecificTaxonomyDetails">
+        <div class="index-content-total-wrapper">
+            <div class="index-content-total-wrapper-top">
+                <div class="wrapper-top">
+                    <div class="mini-header" [class.centered]="collapseHeader">
+                        <!-- <div class="detail">
+                            <div class="detail-top">
+                                <div class="icon-wrapper">
+                                    <i class="md-outline-icon" [ngClass]="activeTaxonomy?.outlineIcon"></i>
+                                </div>
+                                <label>{{activeTaxonomy?.label}}</label>
+                            </div>
+                            <div class="detail-bottom" *ngIf="!collapseHeader">
+                                <p>{{activeTaxonomy?.description}}</p>
+                            </div>
+                        </div> -->
+                        <!-- <div class="separator"></div> -->
+                        <!-- <p *ngIf="collapseHeader" style="margin: 0;">{{activeTaxonomy?.description}}</p> -->
+                        <!-- <div *ngIf="collapseHeader" class="separator"></div> -->
+                        <div class="sub-taxonomy-header">
+                            <div class="sub-taxonomy-header-top">
+                                <label>We identified these sub-categories for <strong>{{activeTaxonomy?.label}}</strong>.</label>
+                            </div>
+                            <div class="sub-taxonomy-header-bottom">
+                                <div class="sub-taxonomy" *ngFor="let taxonomy of activeTaxonomy?.taxonomies"
+                                    [class.marginTop30]="!collapseHeader">
+                                    <div class="sub-taxnomy-top">
+                                        <div class="icon-wrapper">
+                                            <i class="md-outline-icon" [ngClass]="taxonomy?.outlineIcon"></i>
+                                        </div>
+                                        <label>{{taxonomy?.label}}</label>
+                                    </div>
+                                    <div class="sub-taxnomy-bottom" *ngIf="!collapseHeader">
+                                        <p>{{taxonomy.description}}</p>
+                                        <label>Use-cases: </label>
+                                        <!-- <p *ngFor="let purpose of taxonomy.purposes">{{purpose}}</p> -->
+                                        <ul *ngIf="taxonomy.purposes.length > 0">
+                                            <li *ngFor="let purpose of taxonomy.purposes">{{purpose}}</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="toggler">
+                    <button (click)="collapseHeader = !collapseHeader;"><span [hidden]="collapseHeader">Collapse</span><span
+                            [hidden]="!collapseHeader">Expand</span></button>
+                </div>
+            </div>
+            <div class="index-content-total-wrapper-bottom">
+                <app-specific-taxonomy [activeTaxonomyId]="activeTaxonomyId"></app-specific-taxonomy>
+            </div>
+            <!-- <div class="index-sidebar">
+                <all-apps [taxonomy]="activeTaxonomy"></all-apps>
+            </div> -->
+        </div>
+    </div>
+</div>

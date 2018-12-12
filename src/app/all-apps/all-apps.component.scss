@@ -1,0 +1,49 @@
+.apps-list-wrapper {
+    width: 100%;
+    padding: 0;
+    label {
+        &.title {
+            width: 100%;
+            font-size: large;
+            padding: 0 15px;
+            margin-bottom: 15px;
+            span {
+                font-weight: bold;
+            }
+        }
+    }
+    .apps-list-holder {
+        width: 100%;
+        padding: 0;
+        .apps-list-item {
+            width: 100%;
+            display: flex;
+            flex-flow: row;
+            padding: 0 15px;
+            margin: 10px 0;
+            border-bottom: 1px solid rgba(#000000, 0.05);
+            .app-icon {
+                flex: initial;
+                order: 1;    
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                overflow: hidden;
+                img {
+                    max-height: 100%;
+                    max-width: 100%;
+                }
+                .icon-icon {}
+            }
+            label {
+                flex: 1;
+                order: 2;
+                line-height: 24px;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: 0 15px;
+            }
+        }
+    }
+}

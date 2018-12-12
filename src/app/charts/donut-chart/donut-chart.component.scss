@@ -1,0 +1,93 @@
+@import '../../../styles.scss';
+.chart-container {
+    position: relative;
+    .highchart {
+        position: relative;
+        z-index: 1;
+    }
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+        font-size: large;
+        z-index: 2;
+        padding: 20px 20px 0px 20px ;
+        height: 80px;
+        font-weight: 500;
+        box-sizing: border-box;
+        margin: 0;
+        flex-direction: column;
+        position: absolute;
+        i {
+            line-height: 80px;
+            height: 80px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .name {
+            line-height: 80px;
+            height: 80px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+        /deep/ label {
+            margin: 0;
+        }
+        /deep/ p {
+            color: #999;
+            font-size: medium;
+            font-weight: 500;
+        }
+    }
+    .w100 {
+                width: 100%;
+                height: 100%;
+                border-radius: 4px;
+                display: block;
+                .w40 {
+                    width: 40%;
+                    float: right;
+                    height: 100%;
+                    .rating-description {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                        padding-bottom: 23px;
+                        padding-right: 20px;
+                        table {
+                            width: 100%;
+                            tr td {
+                                line-height: 30px;
+                                i {
+                                    height: 12px;
+                                    width: 12px;
+                                    border-radius: 50%;
+                                    display: block;
+                                }
+                                &:last-child {
+                                    text-align: right;
+                                    font-size: small;
+                                }
+                                &:nth-child(2) {
+                                    padding-left: 5px;
+                                }
+                                &:nth-child(3) {
+                                    font-size: small;
+                                }
+                            }
+                        }
+                    }
+                }
+                .w60 {
+                    width: 60%;
+                    float: left;
+                    height: 100%;
+                }
+    }
+}

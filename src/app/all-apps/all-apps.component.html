@@ -1,0 +1,12 @@
+<div class="apps-list-wrapper">
+    <label class="title">Who is sending <span>{{taxonomy.name}}</span> data ?</label>
+    <div class="apps-list-holder">
+        <div class="apps-list-item" *ngFor="let app of apps">
+            <div class="app-icon">
+                <img [attr.src]="app.iconUrl" *ngIf="app.iconUrl" />
+                <div class="icon-icon" *ngIf="!app.iconUrl"></div>
+            </div>
+            <label>{{app.name}}</label>
+        </div>
+    </div>
+</div>

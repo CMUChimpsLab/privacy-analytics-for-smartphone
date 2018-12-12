@@ -1,0 +1,58 @@
+<div class="wrapper-content" [class.loading]="loading">
+  <div class="loading" [hidden]="!loading">
+    <div class="sk-fading-circle">
+      <div class="sk-circle1 sk-circle"></div>
+      <div class="sk-circle2 sk-circle"></div>
+      <div class="sk-circle3 sk-circle"></div>
+      <div class="sk-circle4 sk-circle"></div>
+      <div class="sk-circle5 sk-circle"></div>
+      <div class="sk-circle6 sk-circle"></div>
+      <div class="sk-circle7 sk-circle"></div>
+      <div class="sk-circle8 sk-circle"></div>
+      <div class="sk-circle9 sk-circle"></div>
+      <div class="sk-circle10 sk-circle"></div>
+      <div class="sk-circle11 sk-circle"></div>
+      <div class="sk-circle12 sk-circle"></div>
+    </div>
+  </div>
+  <div class="box-container" [class.loading]="loading">
+    <div class="box-wrapper" *ngIf="!loading">
+      <div class="box w100" *ngIf="dashboardData.categoryDistribution">
+        <div class="content-wrapper">
+          <app-column-chart title="Comparing by number of apps" [data]="dashboardData.categoryDistribution" (onColumnClicked)="onCategoryActivated($event)">
+            <label>Category-wise app distribution</label>
+            <p>How are apps, who share <strong>{{activeTaxonomyLabel}}</strong> related data, distributed across popular categories ?</p>
+          </app-column-chart>
+        </div>
+      </div>
+      <div class="box" *ngFor="let combination of dashboardData.combinations">
+        <div class="content-wrapper" *ngIf="combination">
+          <app-bar-chart title="Comparing by number of apps" [data]="combination" (onColumnClicked)="onSubCategoryActivated($event)">
+            <label>Distribution for {{activeTaxonomyLabel}} sub-categories</label>
+            <p>How does the distribution look compared to each other ?</p>
+          </app-bar-chart>
+        </div>
+      </div>
+      <div class="box" *ngIf="dashboardData.ratingDistribution">
+        <div class="content-wrapper">
+            <app-donut-chart meta="Share of Apps with this PrivacyGrade rating" title="Comparing PrivacyGrade ratings" (onColumnClicked)="onPrivacyGradeCategoryActivated($event)"
+            [collection]="dashboardData.ratingDistribution">
+            <label>Comparing <strong><a ngbTooltip="PrivacyGrade provides detailed information about an app's privacy-related behaviors." style="text-decoration: underline;" href="http://privacygrade.org" target="_blank">PrivacyGrade</a></strong> characteristics in {{activeTaxonomyLabel}}</label>
+            <p>What are the PrivacyGrade ratings are for these apps ?</p>
+          </app-donut-chart>
+        </div>
+      </div>
+      <div class="box w100">
+          <app-card-list [data]="dashboardData.topInstalledApps" >
+              <label>Most <strong>installed</strong> apps sending <span>{{activeTaxonomyLabel}}</span> data</label>
+          </app-card-list>
+      </div>
+
+      <div class="box w100">
+          <app-card-list [data]="dashboardData.topRatedApps" >
+            <label>Top <strong>rated</strong> apps sending phone data</label>
+          </app-card-list>
+      </div>
+    </div>
+  </div>
+</div>

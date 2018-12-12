@@ -1,0 +1,221 @@
+<div class="wrapper-content search-wrapper-container">
+    <div class="header-wrapper search-header-wrapper">
+        <div class="header search-header">
+            <!-- <label class="search-title" *ngIf="!showSearchTitle"><strong>Who</strong> is sharing <strong>what</strong>
+                data ?</label> -->
+            <label class="search-title">Search results <span *ngIf="showOnlyOneCategory">for
+                    {{paramsTitle}}</span> </label>
+            <div class="search-params-holder" *ngIf="filetrParams.length > 0">
+                <div class="search-params">
+                    <div class="param" *ngFor="let param of filetrParams" (click)="removeFilter(param)">
+                        <span class="key">{{param.label}}</span>
+                        <span class="value">{{param.value}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="toggler search-viewer" *ngIf="filetrParams.length == 0">
+                <input class="search-term" [(ngModel)]="searchText" placeholder="Search" (keyup)="onKeyUp($event)"
+                    *ngIf="showSearchBar" />
+            </div>
+            <div class="toggler-view" style="margin: 0 0 0 auto;" (click)="filtersPaneOpened = true">
+                <label [class.active]="someFiltersActive === true">Filters <span>({{numOfFilters | number : '2.0-0'}})</span></label>
+                <div class="view standalone" [class.active]="someFiltersActive === true">
+                    <i class="material-icons">
+                        filter_list
+                    </i>
+                </div>
+            </div>
+            <div class="toggler-view">
+                <label>View</label>
+                <div class="view" [class.active]="currentView === 'tiles'" (click)="currentView = 'tiles'">
+                    <i class="material-icons">
+                        view_module
+                    </i>
+                </div>
+                <div class="view" [class.active]="currentView === 'list'" (click)="currentView = 'list'">
+                    <i class="material-icons">
+                        list
+                    </i>
+                </div>
+            </div>
+            <div class="search-filter-wrappers" *ngIf="filtersPaneLoaded">
+                <div class="overlay" [hidden]="!filtersPaneOpened" (click)="filtersPaneOpened = false;"></div>
+                <div class="wrap" [hidden]="!filtersPaneOpened">
+                    <app-filters-pane (applyFilters)="applyFilters($event)" [params]="currentSearchParams" [(open)]="filtersPaneOpened"
+                        [data]="filtersData"></app-filters-pane>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box-container search-box-container">
+        <div class="box-wrapper search-box-wrapper">
+            <div class="search-wrapper" *ngIf="searchDataAvailable" [class.tilesView]="currentView === 'tiles'">
+                <div class="table-header-wrapper" *ngIf="currentView === 'list'">
+                    <div class="table-header">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th [class.single-category]="showOnlyOneCategory" style="padding-left: 15px; font-weight: 400;">App</th>
+                                    <th class="additional-details-cell" *ngIf="showOnlyOneCategory"></th>
+                                    <th *ngFor="let item of taxonomyHeader" container="body" popoverClass="taxonomy-purpose-popover"
+                                        [class.single-category]="showOnlyOneCategory" triggers="mouseenter:mouseleave"
+                                        [ngbPopover]="popContent" [popoverTitle]="popTitle" (shown)="loadPopup(item)"
+                                        [placement]="item.placement">
+                                        <i class="md-outline-icon" [ngClass]="item.outlineIcon"></i>
+                                        <label>{{item.label}}</label>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+                <div class="table-content-wrapper" *ngIf="currentView === 'list'">
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th [class.single-category]="showOnlyOneCategory">&nbsp;</th>
+                                    <th class="additional-details-cell" *ngIf="showOnlyOneCategory"></th>
+                                    <th [class.single-category]="showOnlyOneCategory" *ngFor="let item of taxonomyHeader"
+                                        placement="top">
+                                        <i class="material-icons">{{item.icon}}</i>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let row of items" (click)="showData(row)" [attr.title]="row.desc">
+                                    <td [class.single-category]="showOnlyOneCategory">
+                                        <div class="app-icon">
+                                            <img [attr.src]="row.icon" *ngIf="row.icon" />
+                                            <div class="icon-icon" *ngIf="!row.icon"></div>
+                                        </div>
+                                        <span *ngIf="row.title">{{row.title}}</span><span *ngIf="!row.title">{{row.name}}</span>
+                                    </td>
+                                    <td class="additional-details-cell" *ngIf="showOnlyOneCategory">
+                                        <div class="additonal-details">
+                                            <div class="detail">
+                                                <label class="key">PrivacyGrade</label>
+                                                <label class="value" *ngIf="row.privacyRating">{{row.privacyRating}}</label>
+                                                <label class="value" *ngIf="!row.privacyRating">-</label>
+                                            </div>
+                                            <div class="detail">
+                                                <label class="key">Installs</label>
+                                                <label class="value" *ngIf="row.meta?.installs">{{row.meta?.installs}}</label>
+                                                <label class="value" *ngIf="!row.meta?.installs">-</label>
+                                            </div>
+                                            <div class="detail">
+                                                <label class="key">Price</label>
+                                                <label class="value" *ngIf="row.meta?.priceText">{{row.meta?.priceText}}</label>
+                                                <label class="value" *ngIf="!row.meta?.priceText">-</label>
+                                            </div>
+                                            <div class="detail">
+                                                <label class="key">Reviews #</label>
+                                                <label class="value" *ngIf="row.meta?.reviews">{{row.meta?.reviews}}</label>
+                                                <label class="value" *ngIf="!row.meta?.reviews">-</label>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td *ngFor="let item of row.mappings" [class.single-category]="showOnlyOneCategory">
+                                        <i class="material-icons" *ngIf="item.value">check</i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tiles-wrapper" *ngIf="currentView === 'tiles'">
+                    <div class="tile" *ngFor="let row of items" (click)="showData(row)">
+                        <div class="tile-holder">
+                            <div class="tile-upper">
+                                <div class="app-icon">
+                                    <img [attr.src]="row.icon" *ngIf="row.icon" />
+                                    <div class="icon-icon" *ngIf="!row.icon"></div>
+                                </div>
+                                <span *ngIf="row.title">{{row.title}}</span><span *ngIf="!row.title">{{row.name}}</span>
+                            </div>
+                            <div class="tile-lower">
+                                <div class="additonal-details">
+                                    <div class="detail">
+                                        <label class="key">PrivacyGrade</label>
+                                        <label class="value" *ngIf="row.privacyRating">{{row.privacyRating}}</label>
+                                        <label class="value" *ngIf="!row.privacyRating">-</label>
+                                    </div>
+                                    <div class="detail">
+                                        <label class="key">Installs</label>
+                                        <label class="value" *ngIf="row.meta?.installs">{{row.meta?.installs}}</label>
+                                        <label class="value" *ngIf="!row.meta?.installs">-</label>
+                                    </div>
+                                    <div class="detail" *ngIf="row.meta?.priceText">
+                                        <label class="key">Price</label>
+                                        <label class="value" *ngIf="row.meta?.priceText">{{row.meta?.priceText}}</label>
+                                        <label class="value" *ngIf="!row.meta?.priceText">-</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-footer">
+                    <div class="page-length-changer">
+                        <label>Showing</label>
+                        <select [(ngModel)]="currentPageLength" (change)="onPageLengthChange($event)">
+                            <option *ngFor="let page of pageLengths" [value]="page">{{page | number : '2.0-0' }}</option>
+                        </select>
+                        <label>apps</label>
+                    </div>
+                    <div class="page-changer">
+                        <label>Showing page {{currentPageIndex + 1 | number : '2.0-0'}} </label>
+                        <div class="page" (click)="changePage(-1)" [class.disabled]="currentPageIndex === 0">
+                            <i class="material-icons">
+                                chevron_left
+                            </i>
+                        </div>
+                        <div class="page" (click)="changePage(1)">
+                            <i class="material-icons">
+                                chevron_right
+                            </i>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-settings" *ngIf="isSettingsPane">
+                    <div class="background-overlay search-page-overlay" (click)="closeSettingsPane()" [class.show]="isSettingsPane"></div>
+                    <div class="table-settings-wrapper" [class.show]="isSettingsPane">
+                        <div class="close" (click)="closeSettingsPane()">
+                            <i class="material-icons">close</i>
+                        </div>
+                        <div class="table-settings-wrapper-header">
+                            <label>Manage Columns</label>
+                        </div>
+                        <div class="table-settings-wrapper-content">
+                            <ng-container *ngFor="let parent of availableTaxonomies">
+                                <div class="column-wrapper">
+                                    <div class="column parent" [class.visible]="parent.visible" (click)="toggleParentVisibility(parent.name)">
+                                        <label>{{parent.label}}</label>
+                                        <i class="material-icons" [hidden]="!parent.visible">visibility</i>
+                                    </div>
+                                    <div class="column child" *ngFor="let column of parent.taxonomies" [class.visible]="column.visible"
+                                        (click)="column.visible = !column.visible">
+                                        <label>{{column.label}}</label>
+                                        <i class="material-icons" [hidden]="!column.visible">visibility</i>
+                                    </div>
+                                </div>
+                            </ng-container>
+                        </div>
+                        <div class="table-settings-wrapper-footer">
+                            <button class="traffic-btn" (click)="apply()">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #popContent>
+    <p>{{taxonomyPopOverDescription}}</p>
+    <label>Use-cases: </label>
+    <ul class="popOverTaxonomyList" *ngIf="taxonomyPurposes.length > 0">
+        <li *ngFor="let item of taxonomyPurposes">{{item}}</li>
+    </ul>
+</ng-template>
+<ng-template #popTitle><b>{{taxonomyPopOverTitle}}</b></ng-template>

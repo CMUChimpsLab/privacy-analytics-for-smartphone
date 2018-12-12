@@ -1,0 +1,19 @@
+<div class="chart-container" style="width: 100%; height: 100%; margin: 0 auto">
+  <label class="title">
+    <ng-content></ng-content>
+  </label>
+  <div class="highchart">
+    <div class="box">
+      <label class="value" [style.color]="color">{{data.data.length}}</label>
+      <label class="key">apps</label>
+    </div>
+    <div class="box">
+      <div class="box-item" *ngFor="let item of data.data">
+        <!-- <div class="app-icon">
+          <img [attr.src]="item.icon" />
+        </div> -->
+        <label class="key normal">{{item.name}}</label>
+      </div>
+    </div>
+  </div>
+</div>

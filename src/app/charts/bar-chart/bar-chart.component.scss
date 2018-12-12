@@ -1,0 +1,49 @@
+@import '../../../styles.scss';
+@import '../../../box.scss';
+.chart-container {
+    position: relative;
+    .highchart {
+        position: relative;
+        z-index: 1;
+        height: calc(100% - 75px);
+        width: 90%; display: block; margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 30px 30px 0;
+    }
+}
+.hc-label,
+/deep/ .hc-label {
+    height: 24px;
+    float: right;
+    i.material-icons {
+        display: inline-block;
+        vertical-align: top;
+        font-size: large;
+        width: 30px;
+        line-height: 24px;
+        height: 24px;
+    }
+    .md-outline-icon {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display:inline-block;
+        margin-left: 6px;
+        position: relative;
+        top: 2px;
+      }
+    .hc-label-text {
+        line-height: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: top;
+        font-size: small;
+        text-transform: lowercase;
+    }
+}
+
+.highcharts-xaxis-labels,
+/deep/ .highcharts-xaxis-labels {
+    text-align: right;
+} 

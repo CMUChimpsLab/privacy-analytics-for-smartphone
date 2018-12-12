@@ -1,0 +1,66 @@
+.chart-container {
+    position: relative;
+    .highchart {
+        position: relative;
+        z-index: 1;
+        width: 90%; display: block; 
+        margin: 0 auto 0 auto;
+        box-sizing: border-box;
+    }
+    .title {
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+        font-size: large;
+        z-index: 2;
+        padding: 20px;
+        height: 80px;
+        font-weight: 300;
+        box-sizing: border-box;
+        margin: 0;
+        i {
+            line-height: 80px;
+            height: 80px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .name {
+            line-height: 80px;
+            height: 80px;
+            display: inline-block;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+    }
+
+    .box {
+        width: 100%;
+        float: left;
+        display: block;
+        margin-top: 6px;
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        .key {
+            display: block;
+            font-size: medium;
+            font-weight: 400;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            letter-spacing: 1px;
+            text-transform: lowercase;
+        }
+        .value {
+            display: block;
+            font-size: 48px;
+            font-weight: 300;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            line-height: 60px;
+            height: 60px;
+            text-shadow: 0px 2px 4px rgba(0,0,0,0.05);
+        }
+    }
+} 

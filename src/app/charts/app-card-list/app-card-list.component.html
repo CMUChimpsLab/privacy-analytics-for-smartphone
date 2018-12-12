@@ -1,0 +1,34 @@
+<div class="app-list-holder">
+    <label><ng-content></ng-content></label>
+    <div class="app-list-wrapper">
+        <div class="list-wrapper-negate">
+            <div class="app-list-item" *ngFor="let app of data" (click)="showData(app)" [attr.title]="app.sumamry">
+                <div class="hold">
+                    <div class="icon-holder">
+                        <div class="icon-wrapper">
+                            <img [attr.src]="app.iconUrl" />
+                        </div>
+                    </div>
+                    <div class="icon-details">
+                        <div class="icon-details-top">
+                            <label [attr.title]="app.name">{{app.name}}</label>
+                            <p [attr.title]="app.summary" >{{app.summary}}</p>
+                        </div>
+                        <div class="icon-details-bottom">
+                            <div class="details-item">
+                                <label class="key">Privacy Rating</label>
+                                <label class="value">{{app.privacyRating}}</label>
+                            </div>
+                            <div class="details-item">
+                                <label class="key">Installs</label>
+                                <label class="value">{{app.installs}}</label>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

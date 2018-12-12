@@ -1,0 +1,85 @@
+@import '../../../styles.scss';
+
+.chart-container {
+  position: relative;
+
+  .highchart {
+    position: relative;
+    z-index: 1;
+    // height: calc(100% - 90px);
+    width: 90%;
+    display: block;
+    margin: 0 auto 0 auto;
+    box-sizing: border-box;
+    // padding: 0 0 30px 0;
+  }
+
+  .title {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+    font-size: large;
+    z-index: 2;
+    padding: 20px;
+    height: 80px;
+    font-weight: 300;
+    box-sizing: border-box;
+    margin: 0;
+    strong {
+      font-weight: 500;
+    }
+
+    i {
+      line-height: 80px;
+      height: 80px;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .name {
+      line-height: 80px;
+      height: 80px;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+  }
+
+  .box {
+    width: 100%;
+    display: block;
+    margin-top: -8px;
+
+    .box-item {
+      width: 33%;
+      float: left;
+      margin: 24px 0 0 0;
+
+      i.material-icons {
+        display: block;
+        height: 24px;
+        width: 24px;
+        font-size: 16px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 24px;
+        color: #fff;
+        margin: 0 auto;
+      }
+      i.md-outline-icon {
+        display: block;
+        margin: 0 auto;
+      }
+
+      span {
+        display: block;
+        margin: 5px auto 0 auto;
+        font-size: small;
+        font-weight: 400;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: lowercase;
+      }
+    }
+  }
+}

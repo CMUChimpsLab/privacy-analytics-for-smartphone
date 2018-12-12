@@ -1,0 +1,43 @@
+<div class="wrapper-content">
+  <div class="header-wrapper">
+    <div class="header flex-start">
+      <label class="title">Showing sub-types of <strong>{{currentLabel}}</strong> category being sent by apps</label>
+      <div style="margin-left: auto;">
+        <div class="toggler">
+          <i class="material-icons"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="charts-container">
+    <div class="charting-container">
+      <highcharts-chart *ngIf="showTaxonomyChart" [Highcharts]="Highcharts" [options]="taxonomyChartOptions" style="width: 90%; height: 500px; display: block; margin: 0 auto;"></highcharts-chart>
+    </div>
+    <div class="table-container">
+      <table class="info-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <ng-container *ngFor="let row of tableData">
+            <tr [class.showBorderBottom]="row.borderBottom" [class.start]="row.start" [class.bitOpaque]="row.value === 0"
+              [class.end]="row.end">
+              <td>
+                <!-- <i class="material-icons" [innerHtml]="row.icon"></i> -->
+                <i class="md-outline-icon" [ngClass]="row.outlineIcon"></i>
+                {{row.name}}</td>
+              <td class="second">{{row.value}} <span>{{currentCriteria}}</span></td>
+              <td>
+                <div class="color-block" [style.background]="row.color"></div>
+              </td>
+            </tr>
+          </ng-container>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

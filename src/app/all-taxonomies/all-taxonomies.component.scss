@@ -1,0 +1,8 @@
+@import '../../styles.scss';
+
+.charts-container {
+    &.noHeader {
+        min-height: 600px;
+        padding: 0px 30px 30px 30px;
+    }
+}

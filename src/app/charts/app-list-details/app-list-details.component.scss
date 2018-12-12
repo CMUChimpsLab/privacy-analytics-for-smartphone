@@ -1,0 +1,132 @@
+@import '../../../styles.scss';
+.chart-container {
+    position: relative;
+    padding: 0px 30px 30px 30px;
+    .highchart {
+        position: relative;
+        z-index: 1;
+        height: calc(100% - 90px);
+        width: 90%; display: block; margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0 30px 30px 0;
+    }
+    .title {
+        width: 100%;
+        padding: 0 15px;
+        text-align: left;
+        font-size: large;
+        z-index: 2;
+        padding: 20px 20px 0 0px;
+        height: 70px;
+        font-weight: 300;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+.app-list-details {
+    table {
+        table-layout: fixed;
+        width:100%;
+        thead {
+            tr {
+                td {
+                    line-height: 48px;
+                    height: 48px;
+                    font-weight: 500;
+                    padding: 0 15px;
+                    border-bottom: 1px dashed #e0e0e0;
+                    &.sorter {
+                        cursor: pointer;
+                        width: 200px;
+                        &:hover {
+                            background: rgba(0,0,0,0.1);
+                        }
+                        .icon-wrapper {
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 36px;
+                            margin-right: 15px;
+                            .icon-wrapper-content {
+                                .material-icons {
+                                    line-height: 48px;
+                                    font-size: small;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        tr {
+            width: 100%;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+            td {
+                &:first-child {
+                    width: 48px;
+                }
+                &:last-child {
+                    width: 600px;
+                    padding-right: 0;
+                }
+                text-align: right;
+                padding: 5px 0;
+                &.appName {
+                    text-align: left;
+                    width: 300px;
+                    overflow-x: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding: 0 15px;
+                }
+                &:nth-child(n+1)
+                &:nth-child(n+2),
+                &:nth-child(n+3),
+                &:nth-child(n+4) {
+                    padding: 0 15px;
+                }
+                .taxonomy {
+                    width: 120px;
+                    height: 36px;
+                    line-height: 36px;
+                    margin: 5px 0px 0 15px;
+                    padding: 0px 15px 0 0;
+                    display: inline-block;
+                    text-align: left;
+                    border-right: 1px solid  rgba(0,0,0,0.1);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    &:last-child {
+                        margin-right: 0;
+                        border-right: none;
+                    }
+                    i {
+                        margin-right: 10px;
+                        vertical-align: middle;
+                        line-height: 36px;
+                    }
+                    span {
+                        display: inline-block;
+                        text-transform: lowercase;
+                        vertical-align: middle;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-wrapper {
+    width:100%;
+    height: 48px;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-center;
+    button {
+        margin: 10px 0;
+        background: #f6f6f6;
+
+    }
+}
