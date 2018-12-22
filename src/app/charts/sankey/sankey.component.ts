@@ -1,9 +1,12 @@
+declare var require: any;
+
 import { Component, Input, OnInit, AfterViewInit } from '@angular/core';
 import { TrafficService } from '../../traffic.service';
 import * as Highcharts from 'highcharts';
-// require('highcharts/modules/sankey')(Highcharts);
-import * as HC_SANKEY from 'highcharts/modules/sankey';
-HC_SANKEY(Highcharts);
+require('highcharts/modules/sankey')(Highcharts);
+// // require('highcharts/modules/sankey')(Highcharts);
+// import * as HC_SANKEY from 'highcharts/modules/sankey';
+// HC_SANKEY(Highcharts);
 
 @Component({
     selector: 'app-sankey',

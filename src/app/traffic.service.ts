@@ -126,19 +126,19 @@ export class TrafficService {
 		return app;
 	}
 	getJelloApiData(taxonomy) {
-		let url = `http://localhost:8080/api/taxonomies/jello/${taxonomy}`;
+		let url = `/api/taxonomies/jello/${taxonomy}`;
 		return this.http.get<any[]>(url);	
 	}
 	getSearchApiData(params) {
-		let url = `http://localhost:8080/api/taxonomies/search`;
+		let url = `/api/taxonomies/search`;
 		return this.http.post<any[]>(url, params);
 	}
 	getAppApiData(packageId) {
-		let url = `http://localhost:8080/api/taxonomies/app/${packageId}`;
+		let url = `/api/taxonomies/app/${packageId}`;
 		return this.http.get<any[]>(url);
 	}
 	getAppSearchMetaData() {
-		let url = `http://localhost:8080/api/taxonomies/searchMetaData`;
+		let url = `/api/taxonomies/searchMetaData`;
 		return this.http.get<any[]>(url);
 	}
 }

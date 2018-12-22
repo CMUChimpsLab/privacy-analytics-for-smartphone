@@ -1,12 +1,10 @@
 const fs = require('fs');
 const MongoClientRequest = require('mongodb');
 const MongoClient = MongoClientRequest.MongoClient;
-// const url = 'mongodb://admin:cmuhcii1@ds127644.mlab.com:27644';
-// const dbName = 'privacy-grade-analytics';
-const url = 'mongodb://localhost:27017';
-// const url = 'mongodb://admin:cmuhcii1@ds127644.mlab.com:27644';
-const dbName = 'privacy-grade';
-// const dbName = 'privacy-grade-analytics';
+// const url = 'mongodb://localhost:27017';
+// const dbName = 'privacy-grade';
+const url = 'mongodb://admin:super-admin-1234@cmu-projects-cluster-shard-00-00-ylevo.mongodb.net:27017,cmu-projects-cluster-shard-00-01-ylevo.mongodb.net:27017,cmu-projects-cluster-shard-00-02-ylevo.mongodb.net:27017/test?ssl=true&replicaSet=CMU-PROJECTS-CLUSTER-shard-0&authSource=admin&retryWrites=true';
+const dbName = 'pg-analytics';;
 
 const appsfile = "data/classified/uniqued/apps.json";
 const appsfileContents = fs.readFileSync(appsfile);
@@ -14,9 +12,9 @@ const apps = JSON.parse(appsfileContents);
 apps.data = apps.data.sort((a, b) => b.requestsCount - a.requestsCount);
 apps.data = apps.data.filter(x => x.app !== 'com.android.providers.downloads,com.android.providers.downloads.ui,com.android.providers.media');
 
-Array.prototype.forEachAsync = async function (fn) {
-    for (let t of this) { await fn(t) }
-}
+// Array.prototype.forEachAsync = async function (fn) {
+//     for (let t of this) { await fn(t) }
+// }
 
 const DEFAULT_TAXONOMIES = [{ "key": "ID", "value": ["GENERALID"] }, { "key": "PHONE", "value": ["BATTERY", "DEVICE", "RUNNINGSTATE", "NOTIFICATION", "NETWORK"] }, { "key": "PERSONAL", "value": ["ACCOUNT", "CALENDAR", "CONTACTS", "SMS", "STORAGE"] }, { "key": "SENSOR", "value": ["CAMERA", "PROXIMITY", "LOCATION", "MICROPHONE", "INERTIAL"] }];
 

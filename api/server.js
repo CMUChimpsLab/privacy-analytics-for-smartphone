@@ -13,8 +13,7 @@ var MS = require('./search.js');
 var Dashboard = require('./dashboard.js');
 var _ = require('lodash');
 var gplay = require('google-play-scraper');
-
-
+var Cacher = require('./cache.js');
 // configure app to use bodyParser()
 // this will let us get the data from a POST
 app.use(bodyParser.urlencoded({
@@ -22,6 +21,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(bodyParser.json());
 app.use(cors());
+// 
 
 var port = process.env.PORT || 8080; // set our port
 
@@ -35,7 +35,7 @@ router.get('/', function (req, res) {
         message: 'hooray! welcome to our api!'
     });
 });
-router.get('/taxonomies/privacyDistribution/:id', function (req, res) {
+router.get('/taxonomies/privacyDistribution/:id', Cacher.cache(), function (req, res) {
     const id = req.params.id;
     MS.connectToDb(function (client) {
         MS.getPrivacyRatingDistribution(client, id, function (data) {
@@ -43,7 +43,7 @@ router.get('/taxonomies/privacyDistribution/:id', function (req, res) {
         });
     })
 })
-router.get('/taxonomies/jello/:id', function (req, res) {
+router.get('/taxonomies/jello/:id', Cacher.cache(), function (req, res) {
     const id = req.params.id;
     MS.connectToDb(function (client) {
         Dashboard.GetDashboardData(client, id, function (data) {
@@ -51,7 +51,7 @@ router.get('/taxonomies/jello/:id', function (req, res) {
         });
     })
 })
-router.post('/taxonomies/search', function (req, res) {
+router.post('/taxonomies/search', Cacher.cache(), function (req, res) {
     // console.log(req.body);
     const params = {
         skip: 0,
@@ -212,7 +212,7 @@ router.get('/taxonomies/collection/:id', (req, res) => {
         res.status(500).send('INTERNAL SERVER ERROR');
     });
 });
-router.get('/taxonomies/app/:id', (req, res) => {
+router.get('/taxonomies/app/:id', Cacher.cache(), (req, res) => {
     let id = req.params.id;
     if (id) {
         let result = GetSnapshotForApp(id);

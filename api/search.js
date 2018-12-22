@@ -1,10 +1,10 @@
 const fs = require('fs');
 const MongoClientRequest = require('mongodb');
 const MongoClient = MongoClientRequest.MongoClient;
-const url = 'mongodb://localhost:27017';
-// const url = 'mongodb://admin:cmuhcii1@ds127644.mlab.com:27644';
-const dbName = 'privacy-grade';
+// const url = 'mongodb://localhost:27017';
 // const dbName = 'privacy-grade-analytics';
+const url = 'mongodb://admin:super-admin-1234@cmu-projects-cluster-shard-00-00-ylevo.mongodb.net:27017,cmu-projects-cluster-shard-00-01-ylevo.mongodb.net:27017,cmu-projects-cluster-shard-00-02-ylevo.mongodb.net:27017/test?ssl=true&replicaSet=CMU-PROJECTS-CLUSTER-shard-0&authSource=admin&retryWrites=true';
+const dbName = 'pg-analytics';
 const _ = require('lodash');
 
 const appsfile = "data/classified/uniqued/apps.json";
@@ -313,6 +313,7 @@ async function getPrivacyRatingDistribution(client, taxonomy, callback) {
 }
 
 async function searchApp(client, package, callback) {
+    console.log('srearch app called');
     const db = client.db(dbName);
     const appsCollection = db.collection('apps');
     const query = {
