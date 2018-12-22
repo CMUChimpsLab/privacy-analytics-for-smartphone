@@ -1,0 +1,35 @@
+{
+  "length": 1,
+  "uniqueHosts": {
+    "length": 1,
+    "data": [
+      "ec2-54-221-240-37.compute-1.amazonaws.com:8010"
+    ]
+  },
+  "uniqueApps": {
+    "length": 1,
+    "data": [
+      "com.rogers.rsbm"
+    ]
+  },
+  "collections": [
+    {
+      "name": "top-apps",
+      "data": [
+        {
+          "name": "com.rogers.rsbm",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "top-hosts",
+      "data": [
+        {
+          "name": "ec2-54-221-240-37.compute-1.amazonaws.com:8010",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

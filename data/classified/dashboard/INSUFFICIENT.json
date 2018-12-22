@@ -1,0 +1,12 @@
+{
+  "requestsCount": 87265,
+  "length": 1,
+  "data": [
+    {
+      "name": "INSUFFICIENT",
+      "requestsCount": 87265,
+      "appsCount": 4266,
+      "hostsCount": 5652
+    }
+  ]
+}

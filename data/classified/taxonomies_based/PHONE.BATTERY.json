@@ -1,0 +1,119 @@
+{
+  "length": 15,
+  "uniqueHosts": {
+    "length": 14,
+    "data": [
+      "np.lexity.com",
+      "support.batteryjunction.com",
+      "live.monitus.net",
+      "showads.pubmatic.com",
+      "c.riskified.com",
+      "eapik.anagog.com",
+      "www.youtube.com",
+      "bat.bing.com",
+      "s.youtube.com",
+      "www.streetdirectory.com",
+      "apps.ad-x.co.uk",
+      "batteryjunction.ecomm-nav.com",
+      "c.coll1onf.com",
+      "tps10208.doubleverify.com"
+    ]
+  },
+  "uniqueApps": {
+    "length": 8,
+    "data": [
+      "com.andromo.dev454383.app424009",
+      "com.android.chrome",
+      "com.italia.autovelox.autoveloxfissiemoibli",
+      "com.go.pinkflower.theme7",
+      "com.google.android.youtube",
+      "streetdirectory.jb.mobile",
+      "com.bskyb.skysportsquiz",
+      "net.peakgames.EvliyaCelebi"
+    ]
+  },
+  "collections": [
+    {
+      "name": "top-apps",
+      "data": [
+        {
+          "name": "com.android.chrome",
+          "count": 6
+        },
+        {
+          "name": "com.andromo.dev454383.app424009",
+          "count": 5
+        },
+        {
+          "name": "com.italia.autovelox.autoveloxfissiemoibli",
+          "count": 2
+        },
+        {
+          "name": "com.go.pinkflower.theme7",
+          "count": 2
+        },
+        {
+          "name": "com.google.android.youtube",
+          "count": 2
+        },
+        {
+          "name": "streetdirectory.jb.mobile",
+          "count": 2
+        },
+        {
+          "name": "com.bskyb.skysportsquiz",
+          "count": 2
+        },
+        {
+          "name": "net.peakgames.EvliyaCelebi",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "top-hosts",
+      "data": [
+        {
+          "name": "apps.ad-x.co.uk",
+          "count": 3
+        },
+        {
+          "name": "bat.bing.com",
+          "count": 2
+        },
+        {
+          "name": "live.monitus.net",
+          "count": 2
+        },
+        {
+          "name": "showads.pubmatic.com",
+          "count": 2
+        },
+        {
+          "name": "c.riskified.com",
+          "count": 2
+        },
+        {
+          "name": "eapik.anagog.com",
+          "count": 2
+        },
+        {
+          "name": "www.youtube.com",
+          "count": 2
+        },
+        {
+          "name": "support.batteryjunction.com",
+          "count": 2
+        },
+        {
+          "name": "s.youtube.com",
+          "count": 2
+        },
+        {
+          "name": "www.streetdirectory.com",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

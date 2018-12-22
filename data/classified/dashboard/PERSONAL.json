@@ -1,0 +1,36 @@
+{
+  "requestsCount": 1130,
+  "length": 5,
+  "data": [
+    {
+      "name": "CONTACTS",
+      "requestsCount": 98,
+      "appsCount": 66,
+      "hostsCount": 70
+    },
+    {
+      "name": "CALENDAR",
+      "requestsCount": 3,
+      "appsCount": 3,
+      "hostsCount": 3
+    },
+    {
+      "name": "SMS",
+      "requestsCount": 0,
+      "appsCount": 0,
+      "hostsCount": 0
+    },
+    {
+      "name": "STORAGE",
+      "requestsCount": 0,
+      "appsCount": 0,
+      "hostsCount": 0
+    },
+    {
+      "name": "ACCOUNT",
+      "requestsCount": 1029,
+      "appsCount": 410,
+      "hostsCount": 421
+    }
+  ]
+}

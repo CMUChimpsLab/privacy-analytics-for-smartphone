@@ -1,0 +1,110 @@
+{
+  "length": 10,
+  "data": [
+    {
+      "host": "ad.doubleclick.net",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "PHONE.NETWORK",
+        "PERSONAL.ACCOUNT",
+        "SENSOR.LOCATION",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 12663
+    },
+    {
+      "host": "dps.sc.omtrdc.net",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 10226
+    },
+    {
+      "host": "generalmotorscorporation.sc.omtrdc.net",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 8210
+    },
+    {
+      "host": "scontent.fagc2-1.fna.fbcdn.net",
+      "taxonomies": [
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 4872
+    },
+    {
+      "host": "om.lds.org",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 4577
+    },
+    {
+      "host": "audible.112.2o7.net",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 4342
+    },
+    {
+      "host": "graph.facebook.com",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 3845
+    },
+    {
+      "host": "www.google.com",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "PHONE.NETWORK",
+        "PERSONAL.ACCOUNT",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 3835
+    },
+    {
+      "host": "googleads.g.doubleclick.net",
+      "taxonomies": [
+        "ID.GENERALID",
+        "PHONE.DEVICE",
+        "PHONE.NETWORK",
+        "PERSONAL.ACCOUNT",
+        "SENSOR.LOCATION",
+        "SENSOR.MICROPHONE",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 3101
+    },
+    {
+      "host": "fls-na.amazon.com",
+      "taxonomies": [
+        "ID.GENERALID",
+        "NONPRIVACY.NONPRIVACY",
+        "INSUFFICIENT.INSUFFICIENT"
+      ],
+      "requestsCount": 2998
+    }
+  ]
+}

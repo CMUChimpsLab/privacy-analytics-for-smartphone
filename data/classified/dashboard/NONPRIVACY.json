@@ -1,0 +1,12 @@
+{
+  "requestsCount": 47212,
+  "length": 1,
+  "data": [
+    {
+      "name": "NONPRIVACY",
+      "requestsCount": 47212,
+      "appsCount": 3877,
+      "hostsCount": 2900
+    }
+  ]
+}

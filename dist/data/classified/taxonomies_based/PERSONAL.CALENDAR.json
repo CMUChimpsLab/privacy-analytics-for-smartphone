@@ -1,0 +1,55 @@
+{
+  "length": 3,
+  "uniqueHosts": {
+    "length": 3,
+    "data": [
+      "www.universalorlando.com",
+      "next-episode.net",
+      "app.acuityscheduling.com"
+    ]
+  },
+  "uniqueApps": {
+    "length": 3,
+    "data": [
+      "com.android.chrome",
+      "net.nextepisode.android",
+      "com.app.app53ad569b3004"
+    ]
+  },
+  "collections": [
+    {
+      "name": "top-apps",
+      "data": [
+        {
+          "name": "com.android.chrome",
+          "count": 2
+        },
+        {
+          "name": "net.nextepisode.android",
+          "count": 2
+        },
+        {
+          "name": "com.app.app53ad569b3004",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "top-hosts",
+      "data": [
+        {
+          "name": "www.universalorlando.com",
+          "count": 2
+        },
+        {
+          "name": "next-episode.net",
+          "count": 2
+        },
+        {
+          "name": "app.acuityscheduling.com",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

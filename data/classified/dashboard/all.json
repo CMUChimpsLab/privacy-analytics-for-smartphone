@@ -1,0 +1,149 @@
+{
+  "length": 6,
+  "data": [
+    {
+      "name": "ID",
+      "requestsCount": 17797,
+      "taxonomies": [
+        {
+          "name": "GENERALID",
+          "requestsCount": 17797,
+          "appsCount": 3598,
+          "hostsCount": 3602
+        }
+      ]
+    },
+    {
+      "name": "PHONE",
+      "requestsCount": 24356,
+      "taxonomies": [
+        {
+          "name": "BATTERY",
+          "requestsCount": 25,
+          "appsCount": 8,
+          "hostsCount": 14
+        },
+        {
+          "name": "DEVICE",
+          "requestsCount": 22042,
+          "appsCount": 4069,
+          "hostsCount": 2750
+        },
+        {
+          "name": "NETWORK",
+          "requestsCount": 2289,
+          "appsCount": 695,
+          "hostsCount": 895
+        },
+        {
+          "name": "RUNNINGSTATE",
+          "requestsCount": 0,
+          "appsCount": 0,
+          "hostsCount": 0
+        },
+        {
+          "name": "NOTIFICATION",
+          "requestsCount": 0,
+          "appsCount": 0,
+          "hostsCount": 0
+        }
+      ]
+    },
+    {
+      "name": "PERSONAL",
+      "requestsCount": 1130,
+      "taxonomies": [
+        {
+          "name": "CONTACTS",
+          "requestsCount": 98,
+          "appsCount": 66,
+          "hostsCount": 70
+        },
+        {
+          "name": "CALENDAR",
+          "requestsCount": 3,
+          "appsCount": 3,
+          "hostsCount": 3
+        },
+        {
+          "name": "SMS",
+          "requestsCount": 0,
+          "appsCount": 0,
+          "hostsCount": 0
+        },
+        {
+          "name": "STORAGE",
+          "requestsCount": 0,
+          "appsCount": 0,
+          "hostsCount": 0
+        },
+        {
+          "name": "ACCOUNT",
+          "requestsCount": 1029,
+          "appsCount": 410,
+          "hostsCount": 421
+        }
+      ]
+    },
+    {
+      "name": "SENSOR",
+      "requestsCount": 1508,
+      "taxonomies": [
+        {
+          "name": "CAMERA",
+          "requestsCount": 1,
+          "appsCount": 1,
+          "hostsCount": 1
+        },
+        {
+          "name": "LOCATION",
+          "requestsCount": 1497,
+          "appsCount": 424,
+          "hostsCount": 375
+        },
+        {
+          "name": "MICROPHONE",
+          "requestsCount": 10,
+          "appsCount": 9,
+          "hostsCount": 8
+        },
+        {
+          "name": "INERTIAL",
+          "requestsCount": 0,
+          "appsCount": 0,
+          "hostsCount": 0
+        },
+        {
+          "name": "PROXIMITY",
+          "requestsCount": 0,
+          "appsCount": 0,
+          "hostsCount": 0
+        }
+      ]
+    },
+    {
+      "name": "NONPRIVACY",
+      "requestsCount": 47212,
+      "taxonomies": [
+        {
+          "name": "NONPRIVACY",
+          "requestsCount": 47212,
+          "appsCount": 3877,
+          "hostsCount": 2900
+        }
+      ]
+    },
+    {
+      "name": "INSUFFICIENT",
+      "requestsCount": 87265,
+      "taxonomies": [
+        {
+          "name": "INSUFFICIENT",
+          "requestsCount": 87265,
+          "appsCount": 4266,
+          "hostsCount": 5652
+        }
+      ]
+    }
+  ]
+}

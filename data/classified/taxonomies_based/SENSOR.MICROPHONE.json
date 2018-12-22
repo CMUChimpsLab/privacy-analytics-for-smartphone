@@ -1,0 +1,110 @@
+{
+  "length": 9,
+  "uniqueHosts": {
+    "length": 8,
+    "data": [
+      "googleads.g.doubleclick.net",
+      "api.new.usacatholic.church",
+      "api.7scenes.com:80",
+      "www.pandora.com",
+      "api.ivoox.com",
+      "az718139.vo.msecnd.net",
+      "www.google-analytics.com",
+      "pubads.g.doubleclick.net"
+    ]
+  },
+  "uniqueApps": {
+    "length": 9,
+    "data": [
+      "com.pocospero.radio1",
+      "com.ryosoftware.calendareventsnotifier",
+      "church.usacatholic.mobile",
+      "seven.client.ntr.android",
+      "com.android.chrome",
+      "com.ivoox.lite.necaxaradio",
+      "com.hellopal.android.pbapp.ko",
+      "com.redbull.redbulletin.de",
+      "com.redpiston.cutepolish"
+    ]
+  },
+  "collections": [
+    {
+      "name": "top-apps",
+      "data": [
+        {
+          "name": "com.pocospero.radio1",
+          "count": 2
+        },
+        {
+          "name": "com.ryosoftware.calendareventsnotifier",
+          "count": 2
+        },
+        {
+          "name": "church.usacatholic.mobile",
+          "count": 2
+        },
+        {
+          "name": "seven.client.ntr.android",
+          "count": 2
+        },
+        {
+          "name": "com.android.chrome",
+          "count": 2
+        },
+        {
+          "name": "com.ivoox.lite.necaxaradio",
+          "count": 2
+        },
+        {
+          "name": "com.hellopal.android.pbapp.ko",
+          "count": 2
+        },
+        {
+          "name": "com.redbull.redbulletin.de",
+          "count": 2
+        },
+        {
+          "name": "com.redpiston.cutepolish",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "name": "top-hosts",
+      "data": [
+        {
+          "name": "googleads.g.doubleclick.net",
+          "count": 3
+        },
+        {
+          "name": "api.new.usacatholic.church",
+          "count": 2
+        },
+        {
+          "name": "api.7scenes.com:80",
+          "count": 2
+        },
+        {
+          "name": "www.pandora.com",
+          "count": 2
+        },
+        {
+          "name": "api.ivoox.com",
+          "count": 2
+        },
+        {
+          "name": "az718139.vo.msecnd.net",
+          "count": 2
+        },
+        {
+          "name": "www.google-analytics.com",
+          "count": 2
+        },
+        {
+          "name": "pubads.g.doubleclick.net",
+          "count": 2
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1626 @@
+{
+  "length": 1,
+  "data": [
+    {
+      "data": {
+        "unknown": {
+          "bundleId": " | com.tapcrowd.Quistor4370",
+          "osversion": " | 6.0.1 "
+        },
+        "classified": {
+          "start": "PHONE.TIMESTAMP | 1503375329",
+          "id": "ID.GENERALID | a7bcc33daa14b2cf71798cd6a3dce236",
+          "devicetype": "PHONE.DEVICE | Nexus+6P",
+          "deviceId": "ID.GENERALID | 84eeef17a9a81ea9",
+          "os": "PHONE.DEVICE | android"
+        }
+      },
+      "host": "com-tapcrowd-quistor4370.analytics.tapcrowd.com",
+      "version": "0",
+      "app": "com.tapcrowd.Quistor4370",
+      "path": "/1.0/analyticsservice/sessionStart"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "appVersion": "PHONE.APPINFO | 4.9.1.2 "
+        }
+      },
+      "host": "app.como-services.com",
+      "version": "0",
+      "app": "com.conduit.app_a8b27d19566c4c3a894927f4e27a7f20.app",
+      "path": "/api/app/a8b27d19-566c-4c3a-8949-27f4e27a7f20/2"
+    },
+    {
+      "data": {
+        "unknown": {
+          "ttid": " | 2",
+          "mb": " | 1"
+        },
+        "classified": {
+          "d": "PHONE.APPINFO | googleads.g.doubleclick.net",
+          "v": "NONPRIVACY.NONPRIVACY | 2m_1",
+          "r": "INSUFFICIENT.INSUFFICIENT | 0.12189703313965006 "
+        }
+      },
+      "host": "l.betrad.com",
+      "version": "0",
+      "app": "com.tru.colorcode",
+      "path": "/ct/0_0_64IRZAKSWNBJ7L3A5JGIBA$underscore$OCDCLEZX6NEBXCNFEVOTDD_890/us/0/1/0/0/0/0/320/50/242/412/0/pixel.gif"
+    },
+    {
+      "data": {
+        "unknown": {
+          "utm_term": " | Empowering%20Modern%20Course%20Creators",
+          "utm_content": " | Empowering-Red-300x250",
+          "adroll_s_ref": " | ",
+          "arrfrr": " | http://get.thinkific.com/lewis-howes/?utm_source",
+          "utm_campaign": " | RT-Web ",
+          "cookie": " | S6IQXYOEDBE5JJNKBQZGGY:10|SVC6Z2A7PZACTDSH3FEPTD:10|FN35ZS5EBFF3JNIVV45GFL:10",
+          "utm_medium": " | Display"
+        },
+        "classified": {
+          "keyw": "INSUFFICIENT.INSUFFICIENT | ",
+          "pv": "INSUFFICIENT.INSUFFICIENT | 16975923521.660175"
+        }
+      },
+      "host": "d.adroll.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/pixel/FN35ZS5EBFF3JNIVV45GFL/SVC6Z2A7PZACTDSH3FEPTD"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "oe": "INSUFFICIENT.INSUFFICIENT | 5A2AB432 ",
+          "oh": "INSUFFICIENT.INSUFFICIENT | 02d0c0867dc8d61148fe42cd7e2da372"
+        }
+      },
+      "host": "scontent.fagc2-1.fna.fbcdn.net",
+      "version": "0",
+      "app": "com.reflectionsinfos.globalvillage",
+      "path": "/v/t39.2081-6/c0.0.76.76/p75x75/11409233_1605436989715129_695118736_n.png"
+    },
+    {
+      "data": {
+        "unknown": {
+          "listads": " | "
+        },
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 4.1.6",
+          "i": "INSUFFICIENT.INSUFFICIENT | ",
+          "t": "INSUFFICIENT.INSUFFICIENT | 0",
+          "c.mraid": "INSUFFICIENT.INSUFFICIENT | 1",
+          "rt": "PHONE.DEVICE | android_app",
+          "u2": "NONPRIVACY.NONPRIVACY | Mozilla/5.0 (Linux; U; Android 5.0.1; en-us; Nexus 5 Build/LRX22C) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1",
+          "u": "INSUFFICIENT.INSUFFICIENT | Mozilla/5.0 (Linux; Android 5.0.1; Nexus 5 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36",
+          "s": "INSUFFICIENT.INSUFFICIENT | 7ea55524a969b108c9a057071949ef0a",
+          "sdk": "PHONE.DEVICE | banner",
+          "u_wv": "INSUFFICIENT.INSUFFICIENT | Mozilla/5.0 (Linux; Android 5.0.1; Nexus 5 Build/LRX22C; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/61.0.3163.98 Mobile Safari/537.36 ",
+          "connection_type": "PHONE.NETWORK | null",
+          "o2": "NONPRIVACY.NONPRIVACY | null",
+          "o": "INSUFFICIENT.INSUFFICIENT | 43e9658c8e3ab73e"
+        }
+      },
+      "host": "ads.quiztapp.com",
+      "version": "0",
+      "app": "com.apparttwin.winkcamerabest",
+      "path": "/md.request.php"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "t": "INSUFFICIENT.INSUFFICIENT | 1498496986 "
+        }
+      },
+      "host": "cdn4.bigcommerce.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/s-ohx5tauf/templates/__custom/Styles/custom.css"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 1 "
+        }
+      },
+      "host": "diz36nn4q02zr.cloudfront.net",
+      "version": "0",
+      "app": "com.nineyi.shop.s000636",
+      "path": "/webapi/imagesV3/Cropped/SalePage/1787608/0/154039"
+    },
+    {
+      "data": {
+        "unknown": {
+          "itok": " | w7FHhum2 "
+        },
+        "classified": {}
+      },
+      "host": "www.elpopular.pe",
+      "version": "0",
+      "app": "com.siyarox.perunewspapers",
+      "path": "/sites/default/files/styles/img_362x271/public/imagen/2017/08/22/Noticia-187814-jota-benz-se-le-declara-a-ivana-yturbe.jpg"
+    },
+    {
+      "data": {
+        "unknown": {
+          "access_token": " | "
+        },
+        "classified": {
+          "format": "NONPRIVACY.NONPRIVACY | json",
+          "sdk": "PHONE.DEVICE | android "
+        }
+      },
+      "host": "graph.facebook.com",
+      "version": "0",
+      "app": "biblia.para.jovenes",
+      "path": "/v2.6/975927832503202/activities"
+    },
+    {
+      "data": {
+        "unknown": {
+          "cache": " | 14 "
+        },
+        "classified": {}
+      },
+      "host": "s2.adform.net",
+      "version": "0",
+      "app": "com.TAPM.Ombre.Hair.Style.Camera.Pro",
+      "path": "/banners/scripts/video/VPAIDWrapper.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "phint": " | sk"
+        },
+        "classified": {}
+      },
+      "host": "tags.bluekai.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/site/2831"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 2.7.21 "
+        }
+      },
+      "host": "connect.facebook.net",
+      "version": "0",
+      "app": "com.outfy",
+      "path": "/signals/config/1536868639887139"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 3e342 "
+        }
+      },
+      "host": "m.belfasttelegraph.co.uk",
+      "version": "0",
+      "app": "com.siyarox.uknewspapers",
+      "path": "/js/mobile-extras.min.js"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 3.8 "
+        }
+      },
+      "host": "glorifytv.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/plugins/spoon-shortcodes/shortcodes.css"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "width": "PHONE.DEVICE | 400 "
+        }
+      },
+      "host": "www.cdnstabletransit.com",
+      "version": "0",
+      "app": "com.app_motosdeportivas.layout",
+      "path": "/gallery_thumbnails/3184577.png"
+    },
+    {
+      "data": {
+        "unknown": {
+          "year": " | 2016",
+          "border": " | false",
+          "locationId": " | 109291"
+        },
+        "classified": {
+          "lang": "PHONE.DEVICE | en_IN",
+          "display_version": "PHONE.APPINFO | 2 ",
+          "uniq": "INSUFFICIENT.INSUFFICIENT | 431",
+          "wtype": "INSUFFICIENT.INSUFFICIENT | certificateOfExcellence"
+        }
+      },
+      "host": "www.tripadvisor.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wejs"
+    },
+    {
+      "data": {
+        "unknown": {
+          "itok": " | URNqCr8Q "
+        },
+        "classified": {}
+      },
+      "host": "www.brgm.fr",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/sites/default/files/styles/photo_346x195/public/entree_geothermie_02.jpg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 12 "
+        }
+      },
+      "host": "cdn.gsmarena.com",
+      "version": "0",
+      "app": "com.braindriver.technonews",
+      "path": "/vv/assets9/css/m/style2.css"
+    },
+    {
+      "data": {
+        "unknown": {
+          "fields": " | supports_attribution,supports_implicit_sdk_logging,gdpv4_nux_content,gdpv4_nux_enabled,android_dialog_configs"
+        },
+        "classified": {
+          "format": "NONPRIVACY.NONPRIVACY | json",
+          "sdk": "PHONE.DEVICE | android "
+        }
+      },
+      "host": "graph.facebook.com",
+      "version": "0",
+      "app": "com.hltcorp.cfp",
+      "path": "/v2.2/2076744981"
+    },
+    {
+      "data": {
+        "unknown": {
+          "bitrate_channel": " | 64/s ",
+          "codec": " | vorbis",
+          "id": " | 14577"
+        },
+        "classified": {}
+      },
+      "host": "ww38.yourmuze.fm",
+      "version": "0",
+      "app": "com.mounir.portugalradio.android",
+      "path": "/webPlayerPrefetch"
+    },
+    {
+      "data": {
+        "unknown": {
+          "heap_total": " | 37523760",
+          "sa": " | L",
+          "sig": " | AOD64_1qsYMsg7BlS-QngdwwcZhcxHKguQ",
+          "client": " | ca-app-pub-7859403600122507",
+          "android_num_video_cache_tasks": " | 0",
+          "preqs": " | 2",
+          "ai": " | C8jpl19edWee_D5ShmASW5JiYDMvviddLvJq_h4cFqLrvl8kIEAEg3pP2I2DJnqeM0KT0D6AB8aeHoAPIAQmoAwGYBAiqBMIBT9CMMwzH-yhH9BZAyUeow_ERXB-JABJsrj12IoFzniS0dfumVbdeufn5lte8vud6GdnVGsYS2JyUUqcJOm090hO1dIkl3ACtiYrRhnhwY2Gh0yMAE49e0wPRKnbN3Y31zD8yNOF7mFPhe6JcB8vzS9jMKmb-CdqV3mtM-CX9ef39lN_scrBb7mUaOntVcZF3cHk75DFZpths8VzjeJeHNPOMOMaa2TvF2R3hKV5waEBAan3FC3G2z64OCSFyV-F5ROzABLKG_PKKAYgFjNifgQOQBgGgBhHYBgKAB_fX-F-YBwGoB6a-G9gHAKAI5dalBLAIAtIIBwiAARABGALYEwyCFAIaAA",
+          "heap_max": " | 201326592",
+          "adurl": " | ;dc_rfl",
+          "eid": " | 318475406%252C318476426",
+          "scroll_index": " | -1",
+          "heap_free": " | 6441024",
+          "caps": " | inlineVideo_interactiveVideo_mraid1_mraid2_sdkVideo_th_autoplay_mediation_av_transparentBackground_sdkAdmobApiForAds_di_aso_sfv_dinm_dim_dinmo_gcache"
+        },
+        "classified": {
+          "seq_num": "PHONE.APPINFO | 3",
+          "mr": "INSUFFICIENT.INSUFFICIENT | -405879439524788809%252C-555520670577160540%252C1081104215781684783%252C1523409532067191817%252C3531649344612664864%252C3706715304278002093%252C6876609069489197480%252C7420812703686909095%252C8714601566974420715%252C-2466944981209294880%252C-2933555117672604181%252C-3117119942194071657%252C-5896709796937749744%252C-6506274886866224755%252C-6810531230726547369",
+          "cid": "ID.GENERALID | CAASEuRoYb3TwkBxTpjENIWE7GHFYw",
+          "format": "NONPRIVACY.NONPRIVACY | interstitial_mb",
+          "target_api": "PHONE.APPINFO | 20$0;xdt",
+          "js": "INSUFFICIENT.INSUFFICIENT | afma-sdk-a-v11055440.6587000.1",
+          "num": "NONPRIVACY.NONPRIVACY | 1",
+          "msid": "PHONE.APPINFO | com.prodict.sqenf"
+        }
+      },
+      "host": "ad.doubleclick.net",
+      "version": "0",
+      "app": "com.prodict.sqenf",
+      "path": "/ddm/adj/N5295.AdMob/B20063260.200899210;dc_ver=39.103;dc_eid=40004001;sz=300x250;u_sd=3.5;kw=[url_encoded_publisher_data];dc_adk=2027040027;ord=v2og6q;click=https://www.googleadservices.com/pagead/aclk"
+    },
+    {
+      "data": {
+        "unknown": {
+          "fields": " | supports_attribution,supports_implicit_sdk_logging,gdpv4_nux_content,gdpv4_nux_enabled,android_dialog_configs"
+        },
+        "classified": {
+          "format": "NONPRIVACY.NONPRIVACY | json",
+          "sdk": "PHONE.DEVICE | android "
+        }
+      },
+      "host": "graph.facebook.com",
+      "version": "0",
+      "app": "air.co.id.netmediatama.NetMediatama",
+      "path": "/v2.2/608738412543355"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 2.9.0 "
+        }
+      },
+      "host": "247ureports.com",
+      "version": "0",
+      "app": "com.andromo.dev488478.app461982",
+      "path": "/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "t": "INSUFFICIENT.INSUFFICIENT | 20130913001 "
+        }
+      },
+      "host": "qzonestyle.gtimg.cn",
+      "version": "0",
+      "app": "com.michong.haochang",
+      "path": "/open_proj/qqconnect/h5login/css/jump2.css"
+    },
+    {
+      "data": {
+        "unknown": {
+          "resize": " | 702,453 "
+        },
+        "classified": {}
+      },
+      "host": "i0.wp.com",
+      "version": "0",
+      "app": "com.witslife.rocket",
+      "path": "/www.venturesquare.net/wp-content/uploads/2017/09/170930-blueskysheltercircle-003.jpg"
+    },
+    {
+      "data": {
+        "unknown": {
+          "resize": " | 150,150 ",
+          "zoom": " | 3"
+        },
+        "classified": {}
+      },
+      "host": "i0.wp.com",
+      "version": "0",
+      "app": "com.wCasaRuralToledo",
+      "path": "/elrosaldelpozo.com/wp-content/uploads/2015/08/IMG_7576.jpg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "d": "INSUFFICIENT.INSUFFICIENT | mm",
+          "r": "INSUFFICIENT.INSUFFICIENT | g ",
+          "s": "INSUFFICIENT.INSUFFICIENT | 120"
+        }
+      },
+      "host": "2.gravatar.com",
+      "version": "0",
+      "app": "com.wOyunHileleriPro",
+      "path": "/avatar/bec2d69d68046ff8b65c4a9c2a2845d0"
+    },
+    {
+      "data": {
+        "unknown": {
+          "rd": " | 1 ",
+          "visit_id": " | 0-636390394166165070-4293241034"
+        },
+        "classified": {
+          "version": "NONPRIVACY.NONPRIVACY | 22079529",
+          "p": "PHONE.DEVICE | androidhelp",
+          "hl": "INSUFFICIENT.INSUFFICIENT | en"
+        }
+      },
+      "host": "support.google.com",
+      "version": "0",
+      "app": "com.google.android.talk",
+      "path": "/hangouts/answer/3144919"
+    },
+    {
+      "data": {
+        "unknown": {
+          "lid": " | 115",
+          "payload": " | {\"source\":\"jssdk\"} ",
+          "api_key": " | 1148741481823499"
+        },
+        "classified": {}
+      },
+      "host": "www.facebook.com",
+      "version": "0",
+      "app": "shehab.app.com",
+      "path": "/impression.php/f21abd497/"
+    },
+    {
+      "data": {
+        "unknown": {
+          "screenDensity": " | 480",
+          "softwareVersion": " | 21",
+          "trackingEnabled": " | 0",
+          "cachedPlayback": " | true",
+          "gameId": " | 59321",
+          "zone": " | defaultZone",
+          "deviceType": " | 268435538"
+        },
+        "classified": {
+          "advertisingTrackingId": "ID.GENERALID | 91de594052b89e7b9a0e978bb3b393b2",
+          "hardwareVersion": "PHONE.DEVICE | LGE+Nexus+5",
+          "sdkVersion": "PHONE.DEVICE | 1402",
+          "rawAdvertisingTrackingId": "ID.GENERALID | 47d7ccbe-c1cb-4087-a5f5-497c91d2e5e6",
+          "platform": "PHONE.DEVICE | android",
+          "screenSize": "PHONE.DEVICE | 268435538",
+          "connectionType": "PHONE.NETWORK | wifi"
+        }
+      },
+      "host": "impact.applifier.com",
+      "version": "0",
+      "app": "com.video.prolwp.engine3d",
+      "path": "/mobile/gamers/59d3de4a8a9103034e104e48/video/first_quartile/5940e61daa3bcf0c67aa6a60/59321 "
+    },
+    {
+      "data": {
+        "unknown": {
+          "action": " | click",
+          "publisher_id": " | 350955",
+          "sub_publisher": " | 1373678669",
+          "device_id": " | ",
+          "android_id": " | ",
+          "site_id": " | 22896",
+          "offer_id": " | 275788",
+          "sub3": " | e2c40364b4y2w2u2",
+          "sub_site": " | C1BEFD1A85E6D00695A262413D3E7774",
+          "sub_campaign": " | 589314fc10bf33b ",
+          "ios_ifa": " | ",
+          "mac_address": " | "
+        },
+        "classified": {
+          "sub_placement": "PHONE.APPINFO | 28049",
+          "google_aid": "ID.GENERALID | cfa9b05e-40d0-483a-b73c-d39daff8f052 ",
+          "ref_id": "ID.GENERALID | e38375eb-4c52-5f5b-8348-ef5337325e91"
+        }
+      },
+      "host": "pwa-y.tlnk.io",
+      "version": "0",
+      "app": "emojikeyboard.emoji.gif.keyboard.facebookmessenger.theme.neontiger",
+      "path": "/serve"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 4.5 "
+        }
+      },
+      "host": "soboconcepts.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/plugins/contact-form-7/includes/js/scripts.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "animation": " | 3",
+          "speed": " | 250 ",
+          "opacity": " | 0"
+        },
+        "classified": {
+          "height": "PHONE.DEVICE | 1",
+          "width": "PHONE.DEVICE | 0"
+        }
+      },
+      "host": "www.viduthalai.in",
+      "version": "0",
+      "app": "krish.pugazh.tamilnews",
+      "path": "/templates/gk_twn/lib/scripts/menu.php"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "t": "INSUFFICIENT.INSUFFICIENT | 1502820910 "
+        }
+      },
+      "host": "cdn3.bigcommerce.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/s-ohx5tauf/product_images/theme_images/banner_888_goodpriceworld__36907.jpg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "format": "NONPRIVACY.NONPRIVACY | atom "
+        }
+      },
+      "host": "m.terlizzilive.it",
+      "version": "0",
+      "app": "com.puglia.link",
+      "path": "/mobile/feed/sport"
+    },
+    {
+      "data": {
+        "unknown": {
+          "image_type": " | icon",
+          "book_id": " | 3369 "
+        },
+        "classified": {
+          "SKU": "INSUFFICIENT.INSUFFICIENT | 52"
+        }
+      },
+      "host": "storage.googleapis.com",
+      "version": "0",
+      "app": "com.chidopi.app.mocool.sherry_shieh",
+      "path": "/chidopi_macy/web/material/25/PRODUCT_3369/icon.png"
+    },
+    {
+      "data": {
+        "unknown": {
+          "page": " | 1",
+          "hashkey": " | 7a57061417e96e2a1044265b69643f386450096d ",
+          "uid": " | 1",
+          "device": " | phone",
+          "device_id": " | 867686022542326"
+        },
+        "classified": {
+          "locale": "PHONE.DEVICE | en_US",
+          "timestamp": "PHONE.TIMESTAMP | 1504945709",
+          "os_version": "PHONE.APPINFO | 6.0.1",
+          "appid": "PHONE.APPINFO | 23390"
+        }
+      },
+      "host": "api.sponsorpay.com",
+      "version": "0",
+      "app": "com.uberfacts.uf",
+      "path": "/feed/v1/offers.json"
+    },
+    {
+      "data": {
+        "unknown": {
+          "action": " | onstart",
+          "adsafe_jsinfo": " | ,id:5c8774f7-82b6-ba98-c770-9d5e4a051c58,c:q33QHQ,sl:na,em:true,fr:true,mn:app76,pt:1-5-15,br:u,fv:0,bv:na,dm:na,abv:na,an:n,fm:qx4Wgmi+11*.107184-17934982|111|12,idMap:11*,pl:,rt:1,cb:0,th:0,es:0,sa:1,sc:0,ha:1,gm:0,fif:0,uf:0,tt:rjss,et:348,oid:7ab96261-a8eb-11e7-b73d-98f2b3ea18e4,v:17.4.20,sp:0,ct:na,dtm:i,gtpl:0,wr:360.592,sr:1080.1920,mf:-98105888,ov:0 ",
+          "adsafe_url": " | http://splash.appsgeyser.com/?widgetid",
+          "adsafe_type": " | abedfq",
+          "limit_ad_tracking_enabled": " | false"
+        },
+        "classified": {
+          "tlon": "SENSOR.LOCATION | 0.0",
+          "tlat": "SENSOR.LOCATION | 0.0",
+          "advid": "ID.GENERALID | 47d7ccbe-c1cb-4087-a5f5-497c91d2e5e6",
+          "guid": "ID.GENERALID | 97d4bb89-18fe-46a0-bd59-b97a9fcdf83a",
+          "v": "NONPRIVACY.NONPRIVACY | 0.154",
+          "p": "PHONE.DEVICE | android"
+        }
+      },
+      "host": "pixel.adsafeprotected.com",
+      "version": "0",
+      "app": "com.wMISZCZOSTWO",
+      "path": "/rfw/st/107184/17934982/skeleton.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "fields": " | supports_attribution,supports_implicit_sdk_logging,gdpv4_nux_content,gdpv4_nux_enabled,android_dialog_configs"
+        },
+        "classified": {
+          "format": "NONPRIVACY.NONPRIVACY | json",
+          "sdk": "PHONE.DEVICE | android "
+        }
+      },
+      "host": "graph.facebook.com",
+      "version": "0",
+      "app": "com.verygreatapps.musiccristiana",
+      "path": "/v2.1/834179506637878"
+    },
+    {
+      "data": {
+        "unknown": {
+          "op": " | r ",
+          "res_format": " | jpg"
+        },
+        "classified": {
+          "twidth": "PHONE.DEVICE | 300",
+          "qlt": "INSUFFICIENT.INSUFFICIENT | 80",
+          "src": "INSUFFICIENT.INSUFFICIENT | http://imgcc.naver.jp/kaze/mission/USER/20140419/99/942589/97/600x483xd7ea22802e49c5b34fcee3d4.jpg/300/600",
+          "theight": "PHONE.DEVICE | 600"
+        }
+      },
+      "host": "rr.img.naver.jp",
+      "version": "0",
+      "app": "com.canolead.nekogazo",
+      "path": "/mig"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 3.0.40 "
+        }
+      },
+      "host": "laurasilvaquesada.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/themes/Divi/includes/builder/scripts/jquery.mobile.custom.min.js"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "http": "INSUFFICIENT.INSUFFICIENT | //noredir.mxptint.net/misc':'v:1.3.2,rand:10095,iv:0 "
+        }
+      },
+      "host": "mpc.mxptint.net",
+      "version": "0",
+      "app": "com.zenjoy.flash14.flashlight",
+      "path": "/1S1FSC777A603S4A9BS282B1S140S32SB3SB35C34_992F48A8_6EFD67SD33646_992F48EE_B3B8CS6"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 170704201438 "
+        }
+      },
+      "host": "m.icalvarychurch.org",
+      "version": "0",
+      "app": "vercoop.calvary.app",
+      "path": "/core/script/mobile/mobileMenu.js"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "c": "INSUFFICIENT.INSUFFICIENT | 100",
+          "slot_uuid": "ID.GENERALID | e0c0c13e-d3a5-4f45-8304-554a03610311",
+          "u": "INSUFFICIENT.INSUFFICIENT | http://forums.hardwarezone.com.sg/tech-show-central-comex-394/lcd-monitor-27-inch-speakers-5670985.html",
+          "jsd": "INSUFFICIENT.INSUFFICIENT | 1",
+          "cb": "INSUFFICIENT.INSUFFICIENT | 5051645 ",
+          "tmnon": "INSUFFICIENT.INSUFFICIENT | ",
+          "src": "INSUFFICIENT.INSUFFICIENT | 3137"
+        }
+      },
+      "host": "aax.amazon-adsystem.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/x/getad"
+    },
+    {
+      "data": {
+        "unknown": {
+          "source": " | 001",
+          "geo": " | angola",
+          "category": " | tech"
+        },
+        "classified": {
+          "os_name": "PHONE.DEVICE | android",
+          "os_version": "PHONE.APPINFO | 6.0 "
+        }
+      },
+      "host": "africa-news-angola.appspot.com",
+      "version": "0",
+      "app": "nl.sentongo.angola",
+      "path": "/category-news"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "device_serial_number": "ID.GENERALID | 10af36801d48d102 ",
+          "device_type": "PHONE.DEVICE | android_tablet",
+          "platform_id": "PHONE.DEVICE | 1"
+        }
+      },
+      "host": "cloudiotv.com",
+      "version": "0",
+      "app": "southerncloud.cloudio.droid100",
+      "path": "/api/stb/get_bundle_themes/"
+    },
+    {
+      "data": {
+        "unknown": {
+          "crid": " | 641522254",
+          "bid": " | 9",
+          "key": " | 9::20171009::22::US::10.6.3.8_7017",
+          "value": " | 50",
+          "buyerid": " | null "
+        },
+        "classified": {
+          "country": "PERSONAL.ACCOUNT | US",
+          "domain": "PHONE.APPINFO | msn.com",
+          "cid": "ID.GENERALID | 8CUPRJ7NQ",
+          "size": "PHONE.DEVICE | 300x250"
+        }
+      },
+      "host": "opt-east.media.net",
+      "version": "0",
+      "app": "com.hakkikonu.americanfootball",
+      "path": "/rtbs/pixel"
+    },
+    {
+      "data": {
+        "unknown": {
+          "do_not_track": " | unknown",
+          "local_storage": " | 1",
+          "ref": " | http://m.ultimahora.com/",
+          "hardware_concurrency": " | 8",
+          "js_fonts": " | [\"Arial\",\"Courier\",\"Courier New\",\"Georgia\",\"Helvetica\",\"Monaco\",\"Palatino\",\"Tahoma\",\"Times\",\"Times New Roman\",\"Verdana\"] ",
+          "regular_plugins": " | []",
+          "has_lied_browser": " | true",
+          "adblock": " | false",
+          "indexed_db": " | 1",
+          "touch_support": " | [5,true,true]",
+          "user_agent": " | Mozilla/5.0 (Linux; U; Android 2.0; en-us; Droid Build/ESD20) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17",
+          "pixel_ratio": " | 3.5",
+          "color_depth": " | 32",
+          "has_lied_os": " | false",
+          "cpu_class": " | unknown"
+        },
+        "classified": {
+          "has_lied_resolution": "PHONE.DEVICE | false",
+          "available_resolution": "PHONE.DEVICE | [732,412]",
+          "session_storage": "PHONE.APPINFO | 1",
+          "has_lied_languages": "PHONE.DEVICE | false",
+          "navigator_platform": "PHONE.DEVICE | Linux aarch64",
+          "fp": "INSUFFICIENT.INSUFFICIENT | 498f837020dcf2fa07da836318acb706",
+          "timezone_offset": "PHONE.DEVICE | 240",
+          "resolution": "PHONE.DEVICE | [732,412]",
+          "language": "PHONE.DEVICE | en-US"
+        }
+      },
+      "host": "adserv.mobi",
+      "version": "0",
+      "app": "com.ultimahora.app",
+      "path": "/tagcontainer/adsmovilfp.php"
+    },
+    {
+      "data": {
+        "unknown": {
+          "type": " | nf320_190 "
+        },
+        "classified": {}
+      },
+      "host": "s.pstatic.net",
+      "version": "0",
+      "app": "test.shoppingmallcapture",
+      "path": "/mimgnews/image/origin/001/2017/09/04/9520613.jpg"
+    },
+    {
+      "data": {
+        "unknown": {
+          "coordOutputFormat": " | MRCV",
+          "coordListOutputFormat": " | STRING",
+          "coord": " | -1.0:-1.0:MRCV:",
+          "vehAvail": " | true ",
+          "vehSpec": " | true",
+          "inclFilter": " | 1"
+        },
+        "classified": {
+          "max": "INSUFFICIENT.INSUFFICIENT | 500",
+          "language": "PHONE.DEVICE | en"
+        }
+      },
+      "host": "www.efa-bw.de",
+      "version": "0",
+      "app": "com.mdv.NVBWCyclePlanner",
+      "path": "/rrp_android/XML_COORD_REQUEST"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 216 "
+        }
+      },
+      "host": "a.abcnews.com",
+      "version": "0",
+      "app": "com.my.newsandnewspapers",
+      "path": "/assets/beta/js/abcn-head.js"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 2.6.9 "
+        }
+      },
+      "host": "www.cabinetmakernyc.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css"
+    },
+    {
+      "data": {
+        "unknown": {
+          "alt": " | rss",
+          "orderby": " | published",
+          "max-results": " | 50 "
+        },
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 2"
+        }
+      },
+      "host": "gdata.youtube.com",
+      "version": "0",
+      "app": "com.the.sound.you.need.myapp",
+      "path": "/feeds/api/playlists/PLpyrjJvJ7GJ4HlNCIgSZYn5TD-zSpChRu"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 2.4.4 "
+        }
+      },
+      "host": "www.entranceindia.com",
+      "version": "0",
+      "app": "com.app.app1d1119aee22d",
+      "path": "/wp-content/plugins/sfwd-lms/templates/learndash_quiz_front.css"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "width": "PHONE.DEVICE | 400 "
+        }
+      },
+      "host": "www.cdnstabletransit.com",
+      "version": "0",
+      "app": "com.app_motosdeportivas.layout",
+      "path": "/gallery_thumbnails/3184581.png"
+    },
+    {
+      "data": {
+        "unknown": {
+          "infos[1].InfoModuleType": " | Video",
+          "infos[0].InfoModuleId": " | 20770",
+          "infos[1].Order": " | 1",
+          "infos[0].InfoModuleType": " | Video",
+          "infos[1].InfoModuleId": " | 19876",
+          "infos[0].Order": " | 0",
+          "infos[2].InfoModuleType": " | Video",
+          "infos[2].InfoModuleId": " | 19931",
+          "infos[2].Order": " | 2 "
+        },
+        "classified": {}
+      },
+      "host": "d38tzu0atxk400.cloudfront.net",
+      "version": "0",
+      "app": "com.nineyi.shop.s001317",
+      "path": "/webapi/Official/GetInfoModuleForApp/1317"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | UV92fpwXoT8MEbi5lLdrA3BhJX-7LLEIRfCKEF3HBqE1 "
+        }
+      },
+      "host": "www.machinerytrader.com",
+      "version": "0",
+      "app": "sandhills.hosteddealerapp.heavyequip",
+      "path": "/bundles/jqueryui"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "oe": "INSUFFICIENT.INSUFFICIENT | 5A2BB772 ",
+          "oh": "INSUFFICIENT.INSUFFICIENT | e1d80ab173c0fcc8ab23b922087048cc"
+        }
+      },
+      "host": "scontent.fagc2-1.fna.fbcdn.net",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/v/t1.0-9/fr/cp0/e15/q65/76408_132352403489795_597386_n.jpg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "d": "INSUFFICIENT.INSUFFICIENT | NJmAwtEo3Ipnlaxl6CMhvkMdwVphaGrg_e5aOD1_U18TSpZcVs1yLxEYb2KrFZJ90u2hN1GpnZgiwOU0mYl2q4VoVF4P7aRAroS3XZ0nT9Lo8JLh9sPAZ5t0ZI4dkc5PnBrTFunCnFc2872WN8Y2KSFhvvKMQm14GQ5UAEGMFUg1",
+          "t": "INSUFFICIENT.INSUFFICIENT | ffffffffcce8aaf2 "
+        }
+      },
+      "host": "senthil.name",
+      "version": "0",
+      "app": "epa.newmarketoverview",
+      "path": "/newstockmarketoverview/ScriptResource.axd"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 1.4.1 "
+        }
+      },
+      "host": "bungalowbarbell.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-includes/js/jquery/jquery-migrate.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "ASIN": " | B00OT6YUIY",
+          "tag": " | ebolaradar-20",
+          "linkCode": " | da4",
+          "queryString": " | ?aaxitk",
+          "pageType": " | DigitalMusicPromotion",
+          "field-keywords": " | new+york+yankees",
+          "path": " | /gp/dmusic/promotions/AmazonMusicUnlimited",
+          "isAUI": " | 1",
+          "referrer": " | ",
+          "subPageType": " | unlimited-landing",
+          "sort": " | ",
+          "url": " | search-alias",
+          "sprefix": " | new+york+ya,aps,213"
+        },
+        "classified": {
+          "linkId": "ID.GENERALID | c23c718b4b7834335210eeccba26c806",
+          "p_lbr_brands_browse-bin": "PHONE.DEVICE | ",
+          "k": "INSUFFICIENT.INSUFFICIENT | ebola",
+          "i": "INSUFFICIENT.INSUFFICIENT | aps",
+          "origSessionId": "PHONE.APPINFO | 135-3597466-4578704",
+          "aaxitk": "INSUFFICIENT.INSUFFICIENT | iP0Cc68VnxbqJwyiusyxFQ"
+        }
+      },
+      "host": "www.amazon.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/gp/overlay/display.html "
+    },
+    {
+      "data": {
+        "unknown": {
+          "ttid": " | 2",
+          "mb": " | 1"
+        },
+        "classified": {
+          "d": "PHONE.APPINFO | googleads.g.doubleclick.net",
+          "v": "NONPRIVACY.NONPRIVACY | 2m_1",
+          "r": "INSUFFICIENT.INSUFFICIENT | 0.055616773519891805 "
+        }
+      },
+      "host": "l.betrad.com",
+      "version": "0",
+      "app": "com.tatuajes230787",
+      "path": "/ct/0_0_64IRZAKSWNBJ7L3A5JGIBA$underscore$AL5VAMHSS5EYZP4LDLEUD3_890/us/0/1/0/0/0/0/320/50/242/412/0/pixel.gif"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 4.7.5 "
+        }
+      },
+      "host": "designerstuts.com",
+      "version": "0",
+      "app": "com.changehaircolortutorial.app",
+      "path": "/wp-includes/js/wp-embed.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "mode": " | NONE",
+          "pid": " | 1123232",
+          "screenLayer": " | 1",
+          "home": " | null "
+        },
+        "classified": {}
+      },
+      "host": "as.ebz.io",
+      "version": "0",
+      "app": "br.appmimmo.buonanotte_amore",
+      "path": "/api/choixPubJS.htm"
+    },
+    {
+      "data": {
+        "unknown": {
+          "namespace": " | DRIVE_BE",
+          "errorRecovery": " | false",
+          "syncType": " | 2 ",
+          "mutationPrecondition": " | false",
+          "openDrive": " | false",
+          "oauth_token": " | ya29.GqEBrwQzMk-iqKqkURgZKot6icUxlGm5zRMJQ5zFcZQLvpk65_63VEROTd6YbZg_lK5S9GkPs5QX7t9bQV57lev8-JpmaLdYxr09wjJMwa2qez75LnkSlbHW1EmSlNUAvNjNsFf5dLiYDB19nLKBHDZVzuLdM2DVUpSaQ7H0J2T_kWbvTKCLij7L9fly7lkqVTmJj7_alNOgEUKNg5Opvp2bIQk"
+        },
+        "classified": {
+          "reason": "PHONE.APPINFO | 304"
+        }
+      },
+      "host": "",
+      "version": "0",
+      "app": "com.google.android.apps.docs",
+      "path": "https://www.googleapis.com/drive/v2internal/settings"
+    },
+    {
+      "data": {
+        "unknown": {
+          "alt": " | json "
+        },
+        "classified": {}
+      },
+      "host": "picasaweb.google.com",
+      "version": "0",
+      "app": "com.launcher.for.iphone.seven.ten",
+      "path": "/data/feed/api/user/centsol.apps/albumid/6234764876755385265"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "odnHeight": "PHONE.DEVICE | 144",
+          "odnWidth": "PHONE.DEVICE | 144",
+          "odnBg": "INSUFFICIENT.INSUFFICIENT | ffffff "
+        }
+      },
+      "host": "i5.walmartimages.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/asr/e2637678-e730-46a3-b378-be0b0529eae8_1.5c7082ce2ab7f04d2124ade517390681.jpeg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "lang": "PHONE.DEVICE | en-US ",
+          "region": "PERSONAL.ACCOUNT | US",
+          "s": "INSUFFICIENT.INSUFFICIENT | BTCUSD"
+        }
+      },
+      "host": "feeds.finance.yahoo.com",
+      "version": "0",
+      "app": "com.btcpricenew.devdzandroid",
+      "path": "/rss/2.0/headline"
+    },
+    {
+      "data": {
+        "unknown": {
+          "lid": " | 115",
+          "payload": " | {\"source\":\"jssdk\"} ",
+          "api_key": " | 132543553464170"
+        },
+        "classified": {}
+      },
+      "host": "www.facebook.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/impression.php/f120b9d36c/"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 1.3.1 "
+        }
+      },
+      "host": "media.healthliving.today",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/themes/voice/js/jquery.magnific-popup.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "modified": " | 1392276665"
+        },
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 6.0.8.09?width"
+        }
+      },
+      "host": "gp1.wac.edgecastcdn.net",
+      "version": "0",
+      "app": "com.app_evsd.layout",
+      "path": "/806757/public_html/custom_images/evsd/custom_bg17.jpg"
+    },
+    {
+      "data": {
+        "unknown": {
+          "cc": " | USD",
+          "ce": " | UTF-8",
+          "pev2": " | App Close",
+          "events": " | event5",
+          "pe": " | lnk_o",
+          "pageName": " | App Close"
+        },
+        "classified": {
+          "v12": "NONPRIVACY.NONPRIVACY | AppClose  ",
+          "AQB": "INSUFFICIENT.INSUFFICIENT | 1",
+          "c18": "ID.GENERALID | b3b46329-b8cd-5c2a-b625-d778187e2416",
+          "OSVersion": "PHONE.DEVICE | Android 5.1.1",
+          "vid": "ID.GENERALID | 259be950-8b22-4c8b-9d9a-3e085bd9e33c",
+          "ndh": "INSUFFICIENT.INSUFFICIENT | 1",
+          "v10": "NONPRIVACY.NONPRIVACY | online",
+          "v33": "NONPRIVACY.NONPRIVACY | Distribution",
+          "ts": "PHONE.TIMESTAMP | 1502863276",
+          "Resolution": "PHONE.DEVICE | 1080x1776",
+          "v42": "ID.GENERALID | 259be950-8b22-4c8b-9d9a-3e085bd9e33c",
+          "v30": "NONPRIVACY.NONPRIVACY | 32.4.0",
+          "v18": "ID.GENERALID | b3b46329-b8cd-5c2a-b625-d778187e2416",
+          "AQE": "INSUFFICIENT.INSUFFICIENT | 1 ",
+          "v2": "PHONE.DEVICE | 2.0.2;Android-5.1.1",
+          "v3": "NONPRIVACY.NONPRIVACY | Eat and Travel Weekly Master",
+          "v11": "NONPRIVACY.NONPRIVACY | Portrait",
+          "c12": "NONPRIVACY.NONPRIVACY | AppClose  ",
+          "v1": "NONPRIVACY.NONPRIVACY | App Close",
+          "DeviceName": "PHONE.DEVICE | Nexus 5",
+          "c33": "NONPRIVACY.NONPRIVACY | Distribution",
+          "c10": "NONPRIVACY.NONPRIVACY | online",
+          "c3": "NONPRIVACY.NONPRIVACY | Eat and Travel Weekly Master",
+          "c2": "PHONE.DEVICE | 2.0.2;Android-5.1.1",
+          "c1": "NONPRIVACY.NONPRIVACY | App Close",
+          "t": "INSUFFICIENT.INSUFFICIENT | 16/7/2017 2:1:16 3 240",
+          "c42": "ID.GENERALID | 259be950-8b22-4c8b-9d9a-3e085bd9e33c",
+          "c11": "NONPRIVACY.NONPRIVACY | Portrait",
+          "c30": "NONPRIVACY.NONPRIVACY | 32.4.0"
+        }
+      },
+      "host": "dps.sc.omtrdc.net",
+      "version": "0",
+      "app": "com.etw.hk",
+      "path": "/b/ss/adp.sj.sec,adp.ln.pro.master11/0/JAVA-3.2.6-AN/s76867721"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "oe": "INSUFFICIENT.INSUFFICIENT | 5A2DC6BD ",
+          "oh": "INSUFFICIENT.INSUFFICIENT | 853c50ffeafd8698bf146272567caab4"
+        }
+      },
+      "host": "scontent.fagc2-1.fna.fbcdn.net",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/v/t1.0-9/cp0/e15/q65/c146.0.618.347/15822719_1331744043566341_1085447827310029935_n.png.jpg"
+    },
+    {
+      "data": {
+        "unknown": {
+          "static": " | 15_10_15 "
+        },
+        "classified": {}
+      },
+      "host": "letyshops.ru",
+      "version": "0",
+      "app": "com.w183719131",
+      "path": "/sites/all/themes/bissdata_theme/img/sprite-bg-figure.jpg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "cmp": "INSUFFICIENT.INSUFFICIENT | OLA_DISPLAY_11235838_150232829_321002551_%ecid? "
+        }
+      },
+      "host": "3924042.fls.doubleclick.net",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/activityi;src=3924042;type=chevr0;cat=usche046;u1=DezPwdxMXnVN8alr/GVB3eBM8SYXLCUbiiVW1NCB8Ac=;u2=en;u15=no referring URL;u18=rzms2hu3cm;u19=UNC;u20=UNC;u25=WQFW3ZDBQN;u26=small;ord=01078334396;~oref=http://www.chevrolet.com/commercial"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "P": "INSUFFICIENT.INSUFFICIENT | MzzowTEwMC5awKORd2O4VBSuMTI4LgAAAACb81lj",
+          "T": "INSUFFICIENT.INSUFFICIENT | 1d3lkoior/X",
+          "Q": "INSUFFICIENT.INSUFFICIENT | 0",
+          "U": "INSUFFICIENT.INSUFFICIENT | 1254dpp49/N",
+          "O": "INSUFFICIENT.INSUFFICIENT | 0.8963125278241932 "
+        }
+      },
+      "host": "b3.yahoo.co.jp",
+      "version": "0",
+      "app": "jp.co.yahoo.android.yshopping.raku",
+      "path": "/b"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "gclid": "ID.GENERALID | CMy8lLGSsNYCFQe5wAodLAsNhA;ord"
+        }
+      },
+      "host": "6592478.fls.doubleclick.net",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/activityi;src=6592478;type=audie0;cat=zenni0;u3=http://www.zennioptical.com/"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 1.3.3 "
+        }
+      },
+      "host": "cignition.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/themes/square/css/owl.theme.css"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "cb": "INSUFFICIENT.INSUFFICIENT | 20111029145709 "
+        }
+      },
+      "host": "vignette.wikia.nocookie.net",
+      "version": "0",
+      "app": "com.wikia.singlewikia.bigbang",
+      "path": "/bigbangtheory/images/c/c6/The-Big-Bang-Theory-S3-E20-058.jpg/revision/latest/window-crop/width/825/x-offset/3/y-offset/0/window-width/1278/window-height/720"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 4.8.1 "
+        }
+      },
+      "host": "www.westinghousearts.org",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-includes/js/wp-embed.min.js"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 1.0 "
+        }
+      },
+      "host": "sendgrid.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/plugins/add-to-any/addtoany.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "ns": " | lower-brightness"
+        },
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 5 "
+        }
+      },
+      "host": "lower-brightness.firebaseio.com",
+      "version": "0",
+      "app": "nu.lower.brightness",
+      "path": "/.ws"
+    },
+    {
+      "data": {
+        "unknown": {
+          "referrer": " | http%3A%2F%2Frover.ebay.com%2Frover%2F1%2F711-220675-40043-0%2F4%3Fmpt%3D%7B1504124071%7D%26ff4%3D%7B28A356EE-C191-4E93-8157-6ECC6AAA755E%7D%26ff18%3Dandroid%26ff6%3D17976624104 ",
+          "mpt": " | 1504124071",
+          "ff4": " | 28A356EE-C191-4E93-8157-6ECC6AAA755E",
+          "mpre": " | http://pages.ebay.com/link/?nav",
+          "alt": " | mkt",
+          "globalID": " | EBAY-US",
+          "ff6": " | 17976624104"
+        },
+        "classified": {
+          "ff18": "PHONE.DEVICE | android"
+        }
+      },
+      "host": "rover.ebay.com",
+      "version": "0",
+      "app": "com.bodeli.AdbhutUpay",
+      "path": "/rover/1/711-220675-40043-0/4"
+    },
+    {
+      "data": {
+        "unknown": {
+          "rev": " | 1507098389402 "
+        },
+        "classified": {
+          "appname": "PHONE.APPINFO | sales"
+        }
+      },
+      "host": "mw.nomurafunds.com.tw",
+      "version": "0",
+      "app": "tw.com.norumafunds.mobileapp",
+      "path": "/www/html/aboutNomura.html"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 2.8.3 "
+        }
+      },
+      "host": "thewaligames.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/wp-content/themes/leviate/assets/js/modernizr-2.8.3.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "phase_name": " | did_load_warmup_packages",
+          "top": " | 1",
+          "dns_time": " | 124",
+          "large_dns_time": " | 0",
+          "is_premium": " | 0",
+          "small_dns_time": " | 0",
+          "imagePerf": " | %5B%7B%22url%22%3A%22%2F89b1d2497b29ccbb7d37be1ec6ef0052.png%2Fv1%2Ffill%2Fw_120%2Ch_120%2Cal_c%2Cusm_0.66_1.00_0.01%2F89b1d2497b29ccbb7d37be1ec6ef0052.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A120%2C%22height%22%3A120%2C%22size%22%3A14400%2C%22start%22%3A10753%2C%22end%22%3A15940%2C%22ttfb%22%3A812%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A3%2C%22fileSize%22%3A7%2C%22kbps%22%3A1%7D%2C%7B%22url%22%3A%22%2F7a47b4f9746168811c85d801bc3e300a.png%2Fv1%2Ffill%2Fw_120%2Ch_120%2Cal_c%2Cusm_0.66_1.00_0.01%2F7a47b4f9746168811c85d801bc3e300a.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A120%2C%22height%22%3A120%2C%22size%22%3A14400%2C%22start%22%3A10753%2C%22end%22%3A15935%2C%22ttfb%22%3A799%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A3%2C%22fileSize%22%3A8%2C%22kbps%22%3A2%7D%2C%7B%22url%22%3A%22%2F608e7725939b0eda16493c462180552c.wix_mp%2Fv1%2Ffill%2Fw_120%2Ch_120%2Cal_c%2Cusm_0.66_1.00_0.01%2F608e7725939b0eda16493c462180552c.wix_mp%22%2C%22format%22%3A%22wix_mp%22%2C%22width%22%3A120%2C%22height%22%3A120%2C%22size%22%3A14400%2C%22start%22%3A10754%2C%22end%22%3A15946%2C%22ttfb%22%3A448%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A3%2C%22fileSize%22%3A8%2C%22kbps%22%3A2%7D%2C%7B%22url%22%3A%22%2Fb4cb80_bcbfe632d9d94060a83d095d1984c57a.jpg%2Fv1%2Ffill%2Fw_532%2Ch_186%2Cal_c%2Clg_1%2Cq_80%2Fb4cb80_bcbfe632d9d94060a83d095d1984c57a.webp%22%2C%22format%22%3A%22jpg%22%2C%22width%22%3A532%2C%22height%22%3A186%2C%22size%22%3A98952%2C%22start%22%3A10757%2C%22end%22%3A16194%2C%22ttfb%22%3A246%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A18%2C%22fileSize%22%3A12%2C%22kbps%22%3A2%7D%2C%7B%22url%22%3A%22%2F41d000_209a8674effee0b4c25eff520cfb0675.png%2Fv1%2Ffill%2Fw_600%2Ch_566%2Cal_c%2F41d000_209a8674effee0b4c25eff520cfb0675.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A600%2C%22height%22%3A566%2C%22size%22%3A339600%2C%22start%22%3A10750%2C%22end%22%3A14608%2C%22ttfb%22%3A151%2C%22dns%22%3A0%2C%22ssl%22%3A425%2C%22speed%22%3A88%2C%22fileSize%22%3A14%2C%22kbps%22%3A4%7D%2C%7B%22url%22%3A%22%2F41d000_7253c958adbab0873ac4c3b297508b0f.png%2Fv1%2Ffill%2Fw_438%2Ch_127%2Cal_c%2Cusm_0.66_1.00_0.01%2F41d000_7253c958adbab0873ac4c3b297508b0f.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A438%2C%22height%22%3A127%2C%22size%22%3A55626%2C%22start%22%3A10758%2C%22end%22%3A16211%2C%22ttfb%22%3A197%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A10%2C%22fileSize%22%3A17%2C%22kbps%22%3A3%7D%2C%7B%22url%22%3A%22%2F41d000_7253c958adbab0873ac4c3b297508b0f.png%2Fv1%2Ffill%2Fw_770%2Ch_223%2Cal_c%2Clg_1%2F41d000_7253c958adbab0873ac4c3b297508b0f.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A770%2C%22height%22%3A223%2C%22size%22%3A171710%2C%22start%22%3A10758%2C%22end%22%3A16237%2C%22ttfb%22%3A133%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A31%2C%22fileSize%22%3A42%2C%22kbps%22%3A8%7D%2C%7B%22url%22%3A%22%2F41d000_906abe8aa8660d830df3177a5714d55a.png%2Fv1%2Ffill%2Fw_237%2Ch_552%2Cal_c%2Cusm_0.66_1.00_0.01%2F41d000_906abe8aa8660d830df3177a5714d55a.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A237%2C%22height%22%3A552%2C%22size%22%3A130824%2C%22start%22%3A10751%2C%22end%22%3A14800%2C%22ttfb%22%3A340%2C%22dns%22%3A0%2C%22ssl%22%3A0%2C%22speed%22%3A32%2C%22fileSize%22%3A43%2C%22kbps%22%3A11%7D%2C%7B%22url%22%3A%22%2Fb4cb80_36d1f7513a19497daae71ed850b2b88c.png%2Fv1%2Ffill%2Fw_522%2Ch_592%2Cal_c%2Cusm_0.66_1.00_0.01%2Fb4cb80_36d1f7513a19497daae71ed850b2b88c.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A522%2C%22height%22%3A592%2C%22size%22%3A309024%2C%22start%22%3A10745%2C%22end%22%3A15386%2C%22ttfb%22%3A206%2C%22dns%22%3A0%2C%22ssl%22%3A426%2C%22speed%22%3A67%2C%22fileSize%22%3A190%2C%22kbps%22%3A41%7D%2C%7B%22url%22%3A%22%2F41d000_d4396cfc7d387f0ae813cc0e956da4e3.png%2Fv1%2Ffill%2Fw_529%2Ch_431%2Cal_c%2Clg_1%2F41d000_d4396cfc7d387f0ae813cc0e956da4e3.png%22%2C%22format%22%3A%22png%22%2C%22width%22%3A529%2C%22height%22%3A431%2C%22size%22%3A227999%2C%22start%22%3A10751%2C%22end%22%3A15817%2C%22ttfb%22%3A433%2C%22dns%22%3A0%2C%22ssl%22%3A425%2C%22speed%22%3A45%2C%22fileSize%22%3A214%2C%22kbps%22%3A42%7D%5D",
+          "is_wixsite": " | 0",
+          "load_time": " | 2918",
+          "server": " | app-jvm-15-194",
+          "ts": " | 2204457",
+          "majorVer": " | 3",
+          "status": " | 1",
+          "is_ssl": " | 0",
+          "redirect_time": " | 0",
+          "small_connect_time": " | 197",
+          "connect_time": " | 3425",
+          "sbot": " | 1",
+          "response_time": " | 21925",
+          "navigation_type": " | 0",
+          "small_name": " | require",
+          "tsp": " | 35972464560",
+          "viewMode": " | site",
+          "evid": " | 351",
+          "large_response_time": " | 2363",
+          "large_connect_time": " | 0",
+          "experiment": " | 0",
+          "large_name": " | skins",
+          "bot": " | 0",
+          "redirect_count": " | 0",
+          "small_response_time": " | 2",
+          "page_id": " | mainPage"
+        },
+        "classified": {
+          "vsi": "ID.GENERALID | 90bea903-b55a-4e5b-836c-1e43fb76a734 ",
+          "c": "INSUFFICIENT.INSUFFICIENT | 1502820536046",
+          "kbps": "INSUFFICIENT.INSUFFICIENT | 11",
+          "i1": "NONPRIVACY.NONPRIVACY | 597",
+          "large_ttfb": "INSUFFICIENT.INSUFFICIENT | 1115",
+          "small_kbps": "INSUFFICIENT.INSUFFICIENT | 24",
+          "src": "INSUFFICIENT.INSUFFICIENT | 42",
+          "ttfb_time": "INSUFFICIENT.INSUFFICIENT | 1304",
+          "did": "ID.GENERALID | 1a21d8f6-fd7d-4b5c-a20f-2264ffe9dcf3",
+          "site_id": "ID.GENERALID | 9a7bd464-7938-4366-b800-e9fa5df75e69",
+          "msid": "ID.GENERALID | 234a4f9b-dddb-4d98-ba9c-9053423fef86",
+          "ttfb": "INSUFFICIENT.INSUFFICIENT | 377",
+          "c3": "NONPRIVACY.NONPRIVACY | 1.2367.29",
+          "c2": "NONPRIVACY.NONPRIVACY | %7B%22initialTimestamp%22%3A0%2C%22mainLoaded%22%3A152058%2C%22random%22%3A-1505834300033.9727%2C%22packagesLoaded%22%3A905240%2C%22coin%22%3A-1502237853328%2C%22dataLoaded0%22%3A1098669%2C%22renderEnd%22%3A1115153%2C%22lastTimeStamp%22%3A1117625%2C%22skinsStart%22%3A902823%2C%22skinsEnd%22%3A903246%2C%22packagesEnd%22%3A914679%7D",
+          "small_ttfb": "INSUFFICIENT.INSUFFICIENT | 292",
+          "c1": "NONPRIVACY.NONPRIVACY | %7B%22navigationStart%22%3A0%2C%22fetchStart%22%3A2418%2C%22domainLookupStart%22%3A2421%2C%22domainLookupEnd%22%3A2453%2C%22connectStart%22%3A2453%2C%22requestStart%22%3A2778%2C%22responseStart%22%3A2862%2C%22responseEnd%22%3A3575%2C%22initialTimestamp%22%3A2918%7D",
+          "is_ssr": "INSUFFICIENT.INSUFFICIENT | 0",
+          "uid": "ID.GENERALID | 3327e1b1-ce59-4fd7-a1ac-65e995654385",
+          "large_kbps": "INSUFFICIENT.INSUFFICIENT | 164",
+          "ver": "NONPRIVACY.NONPRIVACY | 1.2367.29"
+        }
+      },
+      "host": "frog.wix.com",
+      "version": "0",
+      "app": "studios.goldenwolf.discounted",
+      "path": "/ugc-viewer"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "width": "PHONE.DEVICE | 500 "
+        }
+      },
+      "host": "media1.brandsforless.ae",
+      "version": "0",
+      "app": "ae.brandsforless.android",
+      "path": "/media/mobile/banner/main_sportsForLess_mob.png"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "oe": "INSUFFICIENT.INSUFFICIENT | 5A7DDFD7 ",
+          "oh": "INSUFFICIENT.INSUFFICIENT | 58619430fc7c783d0815472746a06180"
+        }
+      },
+      "host": "scontent.fagc2-1.fna.fbcdn.net",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/v/t1.0-1/cp0/e15/q65/c10.0.320.320/p320x320/17155917_732521670240885_1410735980426338831_n.jpg"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "cs": "INSUFFICIENT.INSUFFICIENT | 1v8 "
+        }
+      },
+      "host": "click.appcast.io",
+      "version": "0",
+      "app": "net.andromo.dev452621.app417818",
+      "path": "/track/7pj9lk"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "v": "NONPRIVACY.NONPRIVACY | 850deax "
+        }
+      },
+      "host": "archive.org",
+      "version": "0",
+      "app": "com.mp4video.downloader.free",
+      "path": "/includes/archive.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "mid": " | 36635749689462279242843035467005727400",
+          "ch": " | north-america",
+          "x-carline": " | traverse",
+          "cc": " | CAD",
+          "x-year": " | 2018",
+          "ce": " | UTF-8",
+          "pageName": " | current deals"
+        },
+        "classified": {
+          "bw": "INSUFFICIENT.INSUFFICIENT | 324",
+          "c34": "NONPRIVACY.NONPRIVACY | 3",
+          "v12": "NONPRIVACY.NONPRIVACY | repeat",
+          "AQB": "INSUFFICIENT.INSUFFICIENT | 1",
+          "j": "INSUFFICIENT.INSUFFICIENT | 1.6",
+          "v4": "NONPRIVACY.NONPRIVACY | en",
+          "ndh": "INSUFFICIENT.INSUFFICIENT | 1",
+          "bh": "INSUFFICIENT.INSUFFICIENT | 150",
+          "v37": "NONPRIVACY.NONPRIVACY | current deals",
+          "v10": "NONPRIVACY.NONPRIVACY | tuesday",
+          "v9": "NONPRIVACY.NONPRIVACY | 2:00pm",
+          "server": "PHONE.APPINFO | www.chevrolet.com",
+          "c21": "NONPRIVACY.NONPRIVACY | ola_display_10682556_142546361_406133959_93525931:current deals",
+          "c41": "NONPRIVACY.NONPRIVACY | current deals",
+          "aamb": "INSUFFICIENT.INSUFFICIENT | NRX38WO0n5BH8Th-nqAG_A",
+          "g": "INSUFFICIENT.INSUFFICIENT | http://www.chevrolet.com/bypass/seg5_tools/current-offers.html?x-bodystyle",
+          "c67": "NONPRIVACY.NONPRIVACY | http://www.chevrolet.com/bypass/seg5_tools/current-offers.html?x-bodystyle",
+          "v83": "NONPRIVACY.NONPRIVACY | http://www.chevrolet.com/bypass/seg5_tools/current-offers.html?x-bodystyle",
+          "v": "NONPRIVACY.NONPRIVACY | N",
+          "cmp": "INSUFFICIENT.INSUFFICIENT | OLA_DISPLAY_10682556_142546361_406133959_93525931",
+          "v22": "NONPRIVACY.NONPRIVACY | ola_display_10682556_142546361_406133959_93525931",
+          "v0": "NONPRIVACY.NONPRIVACY | ola_display_10682556_142546361_406133959_93525931",
+          "v11": "NONPRIVACY.NONPRIVACY | weekday",
+          "c": "INSUFFICIENT.INSUFFICIENT | 32",
+          "aamlh": "INSUFFICIENT.INSUFFICIENT | 7",
+          "AQE": "INSUFFICIENT.INSUFFICIENT | 1 ",
+          "c22": "NONPRIVACY.NONPRIVACY | appmeasurementjs1.7.0",
+          "k": "INSUFFICIENT.INSUFFICIENT | Y",
+          "v55": "NONPRIVACY.NONPRIVACY | Repeat",
+          "pf": "INSUFFICIENT.INSUFFICIENT | 1",
+          "t": "INSUFFICIENT.INSUFFICIENT | 10/9/2017 14:9:40 2 240",
+          "s": "PHONE.DEVICE | 360x640"
+        }
+      },
+      "host": "generalmotorscorporation.sc.omtrdc.net",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/b/ss/gmchevrolet,gmgeneralmotorsglobal/1/JS-1.7.0-D7QN/s86523608440103"
+    },
+    {
+      "data": {
+        "unknown": {
+          "provider": " | 0",
+          "current": " | eyJzcG9uc29yZWQiOlsyMDcyODQ2LDIyMzI4MzQsMjE3NjI3MCwxOTI4MjkxLDIyMjAyNjhdfQ",
+          "iv": " | 2",
+          "plugin_id": " | 3",
+          "loaded": " | ",
+          "callback": " | jQuery110201064589077653284_1503064734248"
+        },
+        "classified": {
+          "p": "INSUFFICIENT.INSUFFICIENT | eyJ3IjoiNzMwMzkiLCJ0IjoicmNfODcwIiwiYyI6IjE1MDMwNjQ3Mjk3NDQiLCJ3aWR0aCI6IjE0NDIiLCJyZWZlcmVyIjoiaHR0cDpcL1wvd3d3LnBhbm9yYW1hLmNvbS5hbFwvc3BvcnRcL21vYmlsZS1ob21lXC8ifQ",
+          "width": "PHONE.DEVICE | 1442",
+          "o": "INSUFFICIENT.INSUFFICIENT | 5",
+          "_": "INSUFFICIENT.INSUFFICIENT | 1503064734249 ",
+          "c": "INSUFFICIENT.INSUFFICIENT | 1"
+        }
+      },
+      "host": "trends.revcontent.com",
+      "version": "0",
+      "app": "al.panorama.al",
+      "path": "/fill.php"
+    },
+    {
+      "data": {
+        "unknown": {
+          "pid": " | 7844"
+        },
+        "classified": {
+          "d": "INSUFFICIENT.INSUFFICIENT | www.peragon.com/Truck-Covers ",
+          "qs": "INSUFFICIENT.INSUFFICIENT | utEU{vem!Jfm!Eqwms/bfx>x/rgsihxo0epu0]swel5Dxwgtt.u}m?Jbze)Utwds!Kff\"Dwwnsu\".(Dxohkh}sn!Hqs(Zxvt\"Uzvll(ff{>[fvtbkujcng!|s~dm\"cme)dqxfzt)-\"oblf)jp\"upf)VUC!nsxn\"cjzd{bhv!osjeg\"btvvjpwn6"
+        }
+      },
+      "host": "cr0.worthathousandwords.com",
+      "version": "0",
+      "app": "vabo.gridphoto.artframes.photocollage",
+      "path": "/B/F2/36/0904BBFDD659BDA005B7E4ED3B6.jpg"
+    },
+    {
+      "data": {
+        "unknown": {
+          "modified": " | 1466629805 "
+        },
+        "classified": {}
+      },
+      "host": "gp1.wac.edgecastcdn.net",
+      "version": "0",
+      "app": "com.app_mim797.layout",
+      "path": "/806757/public_html/tab_icons/1/custom_500312_v2_6289976.png"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "g": "INSUFFICIENT.INSUFFICIENT | 3aYTbI5ti8+3V8VDyBm4nEtdCpNdfV1MlS+xPMeqg5Y7Ej+KPG4MU7Z1LXJ+GLy2 "
+        }
+      },
+      "host": "www.bisco.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/cms/includes/subCSS/news.css"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "format": "NONPRIVACY.NONPRIVACY | jpg ",
+          "id": "ID.GENERALID | efdc310f953c828be9e4a63d5ac724f6"
+        }
+      },
+      "host": "www.nxtbook.com",
+      "version": "0",
+      "app": "com.branded.nglcatalogs",
+      "path": "/fx/mags/aircover.php"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "cb": "INSUFFICIENT.INSUFFICIENT | 20141008225054 "
+        }
+      },
+      "host": "vignette.wikia.nocookie.net",
+      "version": "0",
+      "app": "com.wikia.singlewikia.bigbang",
+      "path": "/bigbangtheory/images/3/33/App4.jpg/revision/latest/scale-to-width/540"
+    },
+    {
+      "data": {
+        "unknown": {},
+        "classified": {
+          "ver": "NONPRIVACY.NONPRIVACY | 4.8.1 "
+        }
+      },
+      "host": "www.raggarradio.se",
+      "version": "0",
+      "app": "com.ontheair.radio",
+      "path": "/wp-includes/js/mediaelement/wp-mediaelement.min.js"
+    },
+    {
+      "data": {
+        "unknown": {
+          "resize": " | 500,500 ",
+          "zoom": " | 3.5"
+        },
+        "classified": {}
+      },
+      "host": "i2.wp.com",
+      "version": "0",
+      "app": "com.android.chrome",
+      "path": "/vcareall.com/wp-content/uploads/2017/03/1024BY10241.png"
+    }
+  ]
+}

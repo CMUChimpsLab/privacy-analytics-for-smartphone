@@ -1,0 +1,86 @@
+{
+    "data": [{
+            "id": "network-location-comparison",
+            "label": "NETWORK vs LOCATION",
+            "type": "COMPARISON",
+            "data": [{
+                "key": "NETWORK",
+                "value": 695
+            }, {
+                "key": "LOCATION",
+                "value": 424
+            }],
+            "color": "rgb(41, 128, 185)"
+        },
+        {
+            "id": "account-contacts-comparison",
+            "label": "ACCOUNT vs CONTACTS",
+            "type": "COMPARISON",
+            "data": [{
+                "key": "ACCOUNT",
+                "value": 410
+            }, {
+                "key": "CONTACTS",
+                "value": 66
+            }],
+            "color": "rgb(142, 68, 173)"
+        },
+        {
+            "id": "microphone-battery-comparison",
+            "label": "MICROPHONE vs BATTERY",
+            "type": "COMPARISON",
+            "data": [{
+                "key": "MICROPHONE",
+                "value": 9
+            }, {
+                "key": "BATTERY",
+                "value": 8
+            }],
+            "color": "rgb(22, 160, 133)"
+        },
+        {
+            "id": "device-number",
+            "label": "DEVICE",
+            "type": "NUMBER",
+            "data": [{
+                "key": "Apps",
+                "value": 25
+            }, {
+                "key": "Requests",
+                "value": 4069
+            }]
+        },
+        {
+            "id": "calendar-list",
+            "label": "CALENDAR",
+            "type": "LIST",
+            "data": [{
+                    "app": "com.android.chrome",
+                    "name": "Google Chrome: Fast & Secure",
+                    "iconUrl": "https://lh3.googleusercontent.com/nYhPnY2I-e9rpqnid9u9aAODz4C04OycEGxqHG5vxFnA35OGmLMrrUmhM9eaHKJ7liB-"
+                },
+                {
+                    "app": "net.nextepisode.android",
+                    "name": "Next Episode - Track TV Shows",
+                    "iconUrl": "https://lh3.googleusercontent.com/nWTne90ZzZedPxhuJpBOkF-FW2ML96qL34ktCZtIPs7PqsKQS1WWZUxfjWjYLEa1s00"
+                },
+                {
+                    "app": "com.app.app53ad569b3004",
+                    "name": "T-Mobil Taxi Service",
+                    "iconUrl": "https://lh3.googleusercontent.com/uSQz4aWziHBOE-D3LM5NInmvpejcskLdkYKu8QiWQIjgOzVRI0AYV6r5zleHsbMb4e0"
+                }
+            ]
+        },
+        {
+            "id": "apps-with-most-permissions",
+            "label": "App with most permissions",
+            "type": "App",
+            "data": {
+                "app": "com.android.chrome",
+                "taxonomies": ["ID.GENERALIFD", "PHONE.BATTERY", "PHONE.DEVICE", "PHONE.NETWORK", "PERSONAL.CONTACTS", "PERSONAL.CALENDAR", "PERSONAL.ACCOUNT", "SENSOR.LOCATION", "SENSOR.MICROPHONE", "NONPRIVACY.NONPRIVACY", "INSUFFICIENT.INSUFFICIENT"],
+                "name": "Google Chrome: Fast & Secure",
+                "iconUrl": "https://lh3.googleusercontent.com/nYhPnY2I-e9rpqnid9u9aAODz4C04OycEGxqHG5vxFnA35OGmLMrrUmhM9eaHKJ7liB-"
+            }
+        }
+    ]
+}

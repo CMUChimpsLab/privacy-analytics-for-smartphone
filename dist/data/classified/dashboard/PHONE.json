@@ -1,0 +1,36 @@
+{
+  "requestsCount": 24356,
+  "length": 5,
+  "data": [
+    {
+      "name": "BATTERY",
+      "requestsCount": 25,
+      "appsCount": 8,
+      "hostsCount": 14
+    },
+    {
+      "name": "DEVICE",
+      "requestsCount": 22042,
+      "appsCount": 4069,
+      "hostsCount": 2750
+    },
+    {
+      "name": "NETWORK",
+      "requestsCount": 2289,
+      "appsCount": 695,
+      "hostsCount": 895
+    },
+    {
+      "name": "RUNNINGSTATE",
+      "requestsCount": 0,
+      "appsCount": 0,
+      "hostsCount": 0
+    },
+    {
+      "name": "NOTIFICATION",
+      "requestsCount": 0,
+      "appsCount": 0,
+      "hostsCount": 0
+    }
+  ]
+}
