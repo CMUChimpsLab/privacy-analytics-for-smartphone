@@ -158,7 +158,15 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 app.use(bodyParser.json());
-app.use('/api', router);
+// app.get('/api/*', router);
+app.get('/api/taxonomies/jello/:id', Cacher(), function (req, res) {
+    const id = req.params.id;
+    MS.connectToDb(function (client) {
+        GetDashboardData(client, id, function (data) {
+            res.json(data);
+        });
+    })
+  })
 
 // Server static files from /browser
 app.get('*.*', express.static(join(DIST_FOLDER, 'browser'), {
@@ -174,75 +182,3 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Node Express server listening on http://localhost:${PORT}`);
 });
-
-const classfiedFileParent = 'data/classified';
-const dashboardFolder = 'data/classified/dashboard';
-
-function GetDashboarData(dataCategory) {
-  let file = `${dashboardFolder + '/' + 'all'}.json`;
-  if (dataCategory) {
-    file = `${dashboardFolder + '/' + dataCategory}.json`;
-  }
-  const contents: any = fs.readFileSync(file);
-  const data = JSON.parse(contents);
-  return data;
-}
-
-function GetTaxonomyData(parent, child) {
-  let data = null;
-  if (parent) {
-    parent = parent.toUpperCase();
-  }
-  if (child) {
-    child = child.toUpperCase();
-  }
-  if (parent && child) {
-    const file = `${classfiedFileParent}/taxonomies_based/${parent}.${child}.json`;
-    const contents: any = fs.readFileSync(file);
-    data = JSON.parse(contents);
-  }
-  return data;
-}
-
-function GetSnapshotForDashboard(id) {
-  const file = `${classfiedFileParent}/api-samples/${id}.json`;
-  const contents: any = fs.readFileSync(file);
-  const data = JSON.parse(contents);
-  data.id = id;
-  return data;
-}
-
-// function GetSnapshotForCollection(id) {
-//   let promise = new Promise(function (resolve, reject) {
-//     gplay.list({
-//       collection: gplay.collection[id],
-//       num: 100
-//     })
-//       .then(function (data) {
-//         const mappedData = data.map(x => {
-//           return {
-//             package: x.appId,
-//             title: x.title,
-//             icon: x.icon,
-//             sumamry: x.summary,
-//             developer: x.developer
-//           };
-//         });
-//         resolve(mappedData);
-//       }, function (error) {
-//         reject(error);
-//       });
-//   });
-//   return promise;
-// }
-
-function GetSnapshotForApp(packageId) {
-  const file = `${classfiedFileParent}/uniqued/apps.json`;
-  const contents: any = fs.readFileSync(file);
-  const data = JSON.parse(contents);
-  let app = null;
-  if (data.data.length > 0) {
-    app = data.data.find(x => x.app === packageId);
-  }
-  return app;
-}

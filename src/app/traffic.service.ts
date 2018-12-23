@@ -17,6 +17,7 @@ export class TrafficService {
 	private hostsApiUrl = 'api/hosts';
 	private hostOnlyApiUrl = 'api/host';
 	private appUrl = 'api/taxonomies';
+	private appApiUrl = 'api/taxonomies';
 	taxonomyStore = [];
 	dashboardView = new Subject();
 	dashboardView$ = this.dashboardView.asObservable();
@@ -32,6 +33,7 @@ export class TrafficService {
 		private http: HttpClient,
 		@Optional() @Inject(APP_BASE_HREF) origin: string) {
 		this.hostsApiUrl = origin ? `${origin}${this.hostsApiUrl}` : this.hostsApiUrl;
+		this.appApiUrl = origin ? `${origin}${this.appApiUrl}` : this.appApiUrl;
 	}
 
 	init() {
@@ -126,19 +128,19 @@ export class TrafficService {
 		return app;
 	}
 	getJelloApiData(taxonomy) {
-		let url = `/api/taxonomies/jello/${taxonomy}`;
+		let url = `${this.appApiUrl}/jello/${taxonomy}`;
 		return this.http.get<any[]>(url);	
 	}
 	getSearchApiData(params) {
-		let url = `/api/taxonomies/search`;
+		let url = `${this.appApiUrl}/search`;
 		return this.http.post<any[]>(url, params);
 	}
 	getAppApiData(packageId) {
-		let url = `/api/taxonomies/app/${packageId}`;
+		let url = `${this.appApiUrl}/app/${packageId}`;
 		return this.http.get<any[]>(url);
 	}
 	getAppSearchMetaData() {
-		let url = `/api/taxonomies/searchMetaData`;
+		let url = `${this.appApiUrl}/searchMetaData`;
 		return this.http.get<any[]>(url);
 	}
 }

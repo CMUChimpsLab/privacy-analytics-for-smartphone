@@ -8,11 +8,11 @@ const url = 'mongodb://admin:super-admin-1234@cmu-projects-cluster-shard-00-00-y
 const dbName = 'pg-analytics';
 
 
-const appsfile = "data/classified/uniqued/apps.json";
-const appsfileContents: any = fs.readFileSync(appsfile);
-const apps = JSON.parse(appsfileContents);
-apps.data = apps.data.sort((a, b) => b.requestsCount - a.requestsCount);
-apps.data = apps.data.filter(x => x.app !== 'com.android.providers.downloads,com.android.providers.downloads.ui,com.android.providers.media');
+// const appsfile = "data/classified/uniqued/apps.json";
+// const appsfileContents: any = fs.readFileSync(appsfile);
+// const apps = JSON.parse(appsfileContents);
+// apps.data = apps.data.sort((a, b) => b.requestsCount - a.requestsCount);
+// apps.data = apps.data.filter(x => x.app !== 'com.android.providers.downloads,com.android.providers.downloads.ui,com.android.providers.media');
 
 // Array.prototype.forEachAsync = async function (fn) {
 //     for (let t of this) { await fn(t) }

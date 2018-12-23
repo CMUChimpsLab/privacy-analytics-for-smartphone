@@ -13999,6 +13999,7 @@ var TrafficService = /** @class */ (function () {
         this.hostsApiUrl = 'api/hosts';
         this.hostOnlyApiUrl = 'api/host';
         this.appUrl = 'api/taxonomies';
+        this.appApiUrl = 'api/taxonomies';
         this.taxonomyStore = [];
         this.dashboardView = new rxjs_1.Subject();
         this.dashboardView$ = this.dashboardView.asObservable();
@@ -14011,6 +14012,7 @@ var TrafficService = /** @class */ (function () {
         this.currentRoute = new rxjs_1.Subject();
         this.currentRoute$ = this.currentRoute.asObservable();
         this.hostsApiUrl = origin ? "" + origin + this.hostsApiUrl : this.hostsApiUrl;
+        this.appApiUrl = origin ? "" + origin + this.appApiUrl : this.appApiUrl;
     }
     TrafficService.prototype.init = function () {
         var _this = this;
@@ -14106,19 +14108,19 @@ var TrafficService = /** @class */ (function () {
         return app;
     };
     TrafficService.prototype.getJelloApiData = function (taxonomy) {
-        var url = "/api/taxonomies/jello/" + taxonomy;
+        var url = this.appApiUrl + "/jello/" + taxonomy;
         return this.http.get(url);
     };
     TrafficService.prototype.getSearchApiData = function (params) {
-        var url = "/api/taxonomies/search";
+        var url = this.appApiUrl + "/search";
         return this.http.post(url, params);
     };
     TrafficService.prototype.getAppApiData = function (packageId) {
-        var url = "/api/taxonomies/app/" + packageId;
+        var url = this.appApiUrl + "/app/" + packageId;
         return this.http.get(url);
     };
     TrafficService.prototype.getAppSearchMetaData = function () {
-        var url = "/api/taxonomies/searchMetaData";
+        var url = this.appApiUrl + "/searchMetaData";
         return this.http.get(url);
     };
     return TrafficService;

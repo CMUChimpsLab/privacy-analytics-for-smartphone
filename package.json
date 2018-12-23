@@ -5,7 +5,7 @@
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "ng": "ng",
-    "start": "node dist/server.js",
+    "start": "node --max_old_space_size=8000 dist/server.js",
     "start-ui": "ng serve --proxy-config",
     "test": "ng test",
     "lint": "tslint ./src/**/*.ts -t verbose",

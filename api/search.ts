@@ -1,17 +1,19 @@
 import * as fs from 'fs';
 import * as MongoClientRequest from 'mongodb';
 import * as _ from 'lodash';
+import { join } from 'path';
 const MongoClient = MongoClientRequest.MongoClient;
 // const url = 'mongodb://localhost:27017';
 // const dbName = 'privacy-grade-analytics';
 const url = 'mongodb://admin:super-admin-1234@cmu-projects-cluster-shard-00-00-ylevo.mongodb.net:27017,cmu-projects-cluster-shard-00-01-ylevo.mongodb.net:27017,cmu-projects-cluster-shard-00-02-ylevo.mongodb.net:27017/test?ssl=true&replicaSet=CMU-PROJECTS-CLUSTER-shard-0&authSource=admin&retryWrites=true';
 const dbName = 'pg-analytics';
 
-const appsfile = "data/classified/uniqued/apps.json";
-const appsfileContents: any = fs.readFileSync(appsfile);
-const apps = JSON.parse(appsfileContents);
-apps.data = apps.data.sort((a, b) => b.requestsCount - a.requestsCount);
-apps.data = apps.data.filter(x => x.app !== 'com.android.providers.downloads,com.android.providers.downloads.ui,com.android.providers.media');
+// const DIST_FOLDER = join(process.cwd(), 'dist');
+// const appsfile = `${DIST_FOLDER}/data/classified/uniqued/apps.json`;
+// const appsfileContents: any = fs.readFileSync(appsfile);
+// const apps = JSON.parse(appsfileContents);
+// apps.data = apps.data.sort((a, b) => b.requestsCount - a.requestsCount);
+// apps.data = apps.data.filter(x => x.app !== 'com.android.providers.downloads,com.android.providers.downloads.ui,com.android.providers.media');
 
 const DEFAULT_TAXONOMIES = [{ "key": "ID", "value": ["GENERALID"] }, { "key": "PHONE", "value": ["BATTERY", "DEVICE", "RUNNINGSTATE", "NOTIFICATION", "NETWORK"] }, { "key": "PERSONAL", "value": ["ACCOUNT", "CALENDAR", "CONTACTS", "SMS", "STORAGE"] }, { "key": "SENSOR", "value": ["CAMERA", "PROXIMITY", "LOCATION", "MICROPHONE", "INERTIAL"] }];
 
