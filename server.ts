@@ -49,13 +49,11 @@ app.engine('html', ngExpressEngine({
 app.set('view engine', 'html');
 app.set('views', join(DIST_FOLDER, 'browser'));
 
-var router = express.Router();
-router.get('/', function (req, res) {
-  res.json({
-    message: 'hooray! welcome to our api!'
-  });
-});
-router.get('/taxonomies/privacyDistribution/:id', Cacher(), function (req, res) {
+app.use(bodyParser.urlencoded({
+    extended: true
+  }));
+  app.use(bodyParser.json());
+app.get('/api/taxonomies/privacyDistribution/:id', Cacher(), function (req, res) {
   const id = req.params.id;
   MS.connectToDb(function (client) {
       MS.getPrivacyRatingDistribution(client, id, function (data) {
@@ -63,7 +61,7 @@ router.get('/taxonomies/privacyDistribution/:id', Cacher(), function (req, res) 
       });
   })
 })
-router.get('/taxonomies/jello/:id', Cacher(), function (req, res) {
+app.get('/api/taxonomies/jello/:id', Cacher(), function (req, res) {
   const id = req.params.id;
   MS.connectToDb(function (client) {
       GetDashboardData(client, id, function (data) {
@@ -71,7 +69,7 @@ router.get('/taxonomies/jello/:id', Cacher(), function (req, res) {
       });
   })
 })
-router.post('/taxonomies/search', Cacher(), function (req, res) {
+app.post('/api/taxonomies/search', Cacher(), function (req, res) {
   // console.log(req.body);
   const params = {
       skip: 0,
@@ -146,7 +144,7 @@ router.post('/taxonomies/search', Cacher(), function (req, res) {
       }
   })
 })
-router.get('/taxonomies/searchMetaData', function(req, res) {
+app.get('/api/taxonomies/searchMetaData', function(req, res) {
   MS.connectToDb(function (client) {
       MS.searchMetaDataQuery(client, function (data) {
           res.json(data);
@@ -154,11 +152,6 @@ router.get('/taxonomies/searchMetaData', function(req, res) {
   })
 });
 
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(bodyParser.json());
-// app.get('/api/*', router);
 app.get('/api/taxonomies/jello/:id', Cacher(), function (req, res) {
     const id = req.params.id;
     MS.connectToDb(function (client) {
